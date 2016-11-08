@@ -1,3 +1,5 @@
+body {position:relative;}
+
 .topframe {
   background-color: #555;
 }
@@ -7,8 +9,43 @@
 
     .topframe__menu {}
 
-    .topframe__slider {}
+        .affix {
+          top:0;
+          width: 100%;
+          z-index: 9999 !important;
+        }
+               
+        .affix ~ .container-fluid {
+          position: relative;
+          top: 100px;
+        }
+        .navbar {
+          margin-bottom:0;
+          background-color: #555;
+          z-index: 9999;
+          border: 0;
+          font-size: 14px !important;
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+        }
         
+        .navbar li a, .navbar .navbar-brand {
+          color: #eee !important;
+        }
+        
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+          
+          background-color: #444 !important;
+        }
+        /*
+        .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+        }*/
+
+    .topframe__slider {}
+
         .slider__carousel{
           width:100%;
           padding:0;
@@ -18,6 +55,23 @@
         .slider__controlbar {
           width:100%;
           height:50px;
+        }
+        #myCarousel .carousel-inner img {
+          -webkit-filter: grayscale(90%);
+          filter: grayscale(90%); /* make all photos black and white */ 
+          width: 100%; /* Set width to 100% */
+          margin: auto;
+          height:500px;
+        }
+        
+        #myCarousel .carousel-caption h3 {
+          color: #fff !important;
+        }
+        
+        @media (max-width: 600px) {
+          #myCarousel .carousel-caption {
+            display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+          }
         }
 
 .mainframe {}
@@ -109,8 +163,9 @@
         .contacts__content_position,
         .fbcomments__content_position,
         .botframe__content_position {
-          width:800px;
+          max-width:800px;
           margin:0 auto;
+          padding-bottom:15px;
         }
 
 .botframe {
