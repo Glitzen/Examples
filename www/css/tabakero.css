@@ -7,7 +7,9 @@ body {position:relative;}
       height:100px;
     }
 
-    .topframe__menu {}
+    .topframe__menu {
+      height: 50px;
+    }
 
         .affix {
           top:0;
@@ -30,6 +32,12 @@ body {position:relative;}
           border-radius: 0;
         }
         
+        .navbar-nav {
+          width:683px;
+          margin:auto;
+          float:none !important;
+        }
+
         .navbar li a, .navbar .navbar-brand {
           color: #eee !important;
         }
@@ -53,6 +61,7 @@ body {position:relative;}
         }
 
         .slider__controlbar {
+          position:relative;
           width:100%;
           height:50px;
         }
@@ -68,13 +77,43 @@ body {position:relative;}
           color: #fff !important;
         }
         
+        ol.carousel-indicators {
+          bottom:-50px !important;
+        }
+
+        ol.carousel-indicators li {
+          width:15px;
+          height:15px;
+          border: 1px solid white;
+          color:transparent;
+        }
+
+        ol.carousel-indicators li:active, ol.carousel-indicators li:hover {
+          color:white;
+        }
+
         @media (max-width: 600px) {
           #myCarousel .carousel-caption {
             display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-          }
+          }      
         }
 
 .mainframe {}
+        
+        /* Positioners */
+        .about__content_position,
+        .services__content_position,
+        .cigars__content_position,
+        .video__content_position,
+        .gallery__content_position,
+        .contacts__content_position,
+        .fbcomments__content_position,
+        .botframe__content_position {
+          max-width:800px;
+          margin:0 auto;
+          padding-bottom:15px;
+        }
+
     .mainframe__about {
       background-color: #fff;
       margin-bottom:0px;
@@ -96,7 +135,7 @@ body {position:relative;}
       background-color: #e5e5e5;
     }
         .cigars__content {
-          
+          text-align:center;
         }
             /* Carousel styles*/
             #myCarousel2 .carousel-control.right, #myCarousel2 .carousel-control.left {
@@ -111,6 +150,10 @@ body {position:relative;}
             #myCarousel2 .carousel-indicators li.active {
               background-color: #777;
             }
+
+            #myCarousel2 .item {
+            
+            }
             
             #myCarousel2 .item h4 {
               font-size: 19px;
@@ -122,23 +165,64 @@ body {position:relative;}
             
             #myCarousel2 .item span {
               font-style: normal;
+              
             }
-        
+            
+            #myCarousel2 .item p {
+              display:inline-block;
+              margin:auto;  
+              width:80%;
+              
+            }
+            
     .mainframe__video {
       margin-bottom:0px;
       background-color: #a7a7a7;
     }
         .video__content {
+          text-align:center;
           
         }
-       
+        
+        .content__player {
+          padding:15px;
+        }
     .mainframe_gallery {
       margin-bottom:0px;
       background-color: #e5e5e5;
     }
         .gallery__content {
+          padding:15px;
+          
           
         }
+
+        .modal-dialog {
+          margin-top:70px;  
+        }
+
+            .content__outerrow {
+              padding:15px 0;
+              background-color:white;
+              border-radius:10px;
+              text-align:center;
+
+            }
+        
+            .content__innerrow {
+              margin:0;
+              
+            }
+                .content__innerrow a {
+                  padding:0;
+                }
+
+                .content__innerrow_img  {
+                  padding:5px;
+                  width: 100%;
+                }
+
+
       
     .mainframe__contacts {
       margin-bottom:0px;
@@ -152,21 +236,13 @@ body {position:relative;}
       background-color: #e5e5e5;
     }
         .fbcomments__content {
-          
+          padding:15px 0;
+          text-align:center;
         }
       
-        .about__content_position,
-        .services__content_position,
-        .cigars__content_position,
-        .video__content_position,
-        .gallery__content_position,
-        .contacts__content_position,
-        .fbcomments__content_position,
-        .botframe__content_position {
-          max-width:800px;
-          margin:0 auto;
-          padding-bottom:15px;
-        }
+        
+        
+        
 
 .botframe {
   height:200px;
