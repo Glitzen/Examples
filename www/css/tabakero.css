@@ -228,6 +228,14 @@ body {position:relative;}
           max-width:600px;
         }
 
+        .mainframe__about .about__story p {
+          padding:15px;
+          text-align: left;
+          font-size:16px;
+          display:inline-block;
+          max-width:800px;
+        }
+
         .services__content {
           text-align: center;
         }
