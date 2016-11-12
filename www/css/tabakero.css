@@ -1,11 +1,68 @@
 body {position:relative;}
 
+/* Positioners */
+        .header__content_position {
+          max-width:800px;
+          margin:0 auto;
+          padding-bottom:15px;
+        }
+
+        .about__content_position,
+        .services__content_position,
+        .cigars__content_position,
+        .video__content_position,
+        .gallery__content_position,
+        .contacts__content_position,
+        .fbcomments__content_position,
+        .botframe__content_position {
+          max-width:800px;
+          margin:0 auto;
+          padding-bottom:15px;
+        }
+  
 .topframe {
   background-color: #555;
 }
     .topframe__header {
       height:100px;
+      
     }
+
+        .topframe__header_brand {
+          display:inline-block;
+          width:205px;
+
+          float:left;
+        }
+        
+        .topframe__header h1 {
+          margin: 15px 0 0 0;
+          font-size:28px;
+          color:white;
+          border-bottom: 1px solid white;
+        }
+        
+        .topframe__header h2 {
+          margin: 5px 0 0 0;
+          font-size: 12px;
+          letter-spacing: 2px;
+          color:white;
+        }
+
+        .topframe__header p {
+          text-align: right;
+          margin: 55px 0 0 0;
+          font-size:14px;
+          letter-spacing: 1px;
+          color:white;
+        }
+
+        .topframe__header_contacts {
+          display:inline-block;
+          width:190px;
+          float:right;
+        }
+
 
     .topframe__menu {
       height: 50px;
@@ -53,6 +110,38 @@ body {position:relative;}
         }*/
 
     .topframe__slider {}
+        
+        .topslider_image {
+          width: 100%;
+          margin: auto;
+          height: 500px;
+          
+        }
+
+        .topslider_image-1 {
+          background: url("../content/slider/01.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-2 {
+          background: url("../content/slider/02.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-3 {
+          background: url("../content/slider/03.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-4 {
+          background: url("../content/slider/04.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
 
         .slider__carousel{
           width:100%;
@@ -77,19 +166,28 @@ body {position:relative;}
           color: #fff !important;
         }
         
-        ol.carousel-indicators {
+        #myCarousel ol.carousel-indicators {
           bottom:-50px !important;
+          list-style: square initial initial;
         }
 
-        ol.carousel-indicators li {
+        #myCarousel ol.carousel-indicators li {
+          border-radius:0;
           width:15px;
           height:15px;
           border: 1px solid white;
           color:transparent;
         }
 
-        ol.carousel-indicators li:active, ol.carousel-indicators li:hover {
-          color:white;
+        #myCarousel .carousel-indicators .active {
+          background-color:#fff;
+          margin:0 0 1px 0 !important; 
+          
+        }
+
+        #myCarousel .carousel-indicators li:hover {
+          background-color:#777;
+          
         }
 
         @media (max-width: 600px) {
@@ -100,26 +198,44 @@ body {position:relative;}
 
 .mainframe {}
         
-        /* Positioners */
-        .about__content_position,
-        .services__content_position,
-        .cigars__content_position,
-        .video__content_position,
-        .gallery__content_position,
-        .contacts__content_position,
-        .fbcomments__content_position,
-        .botframe__content_position {
-          max-width:800px;
-          margin:0 auto;
-          padding-bottom:15px;
-        }
+
 
     .mainframe__about {
       background-color: #fff;
       margin-bottom:0px;
     }
         .about__content {
-          
+          text-align: center;
+        }
+
+        .about__content h2 {
+          padding:15px;
+
+
+        }
+
+        .about__content h4 {
+          padding:15px 15px 0 15px;
+
+         
+        }
+
+        .about__content p {
+          padding:15px;
+          text-align: left;
+          font-size:16px;
+          display:inline-block;
+          max-width:600px;
+        }
+
+        .services__content {
+          text-align: center;
+        }
+
+        .services__content h4 {
+          padding:15px;
+          display:inline-block;
+          max-width:600px;
         }
 
     .mainframe_services {
@@ -136,6 +252,9 @@ body {position:relative;}
     }
         .cigars__content {
           text-align:center;
+        }
+        .cigars__content h3 {
+          margin: 20px 0;
         }
             /* Carousel styles*/
             #myCarousel2 .carousel-control.right, #myCarousel2 .carousel-control.left {
@@ -154,6 +273,12 @@ body {position:relative;}
             #myCarousel2 .item {
             
             }
+
+            .item_image {
+              width:70%;
+              margin:auto;
+              height:auto;
+            }
             
             #myCarousel2 .item h4 {
               font-size: 19px;
@@ -169,9 +294,11 @@ body {position:relative;}
             }
             
             #myCarousel2 .item p {
+              padding-top:15px;
               display:inline-block;
               margin:auto;  
               width:80%;
+              min-height:65px;
               
             }
             
@@ -192,8 +319,13 @@ body {position:relative;}
       background-color: #e5e5e5;
     }
         .gallery__content {
-          padding:15px;
+          padding:30px;
+          text-align:center;
           
+        }
+
+        .gallery__content h3 {
+          margin:0 0 20px 0;
           
         }
 

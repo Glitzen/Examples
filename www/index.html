@@ -27,11 +27,22 @@
     <script src="js/ekko-lightbox.min.js"></script>
 
     <div class="topframe" id="top">
-      <div class="topframe__header">Halo!</div>
+      <div class="topframe__header header__content_position">
+        <div class="topframe__header_brand">
+        <h1>Торседор <br>
+        Эрлис Камбара</h1>
+        <h2>Сигары и сигарное шоу</h2>
+        </div>
+        <div class="topframe__header_contacts hidden-xs">
+          <p><span class="glyphicon glyphicon-phone"></span> +7 (926) 467-9446<br>
+          <span class="glyphicon glyphicon-envelope"></span> email@something.com</p>
+        </div>
+      </div>
       <div class="topframe__menu">
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
           <div class="container">
             <div class="navbar-header">
+              <a class="navbar-brand visible-xs" href="#top">Tabakero.com</a>
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -60,31 +71,44 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
           
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="ny.jpg" alt="New York">
+                <div class="topslider_image topslider_image-1"><!--<img src="ny.jpg" alt="">-->
+                </div>
                 <div class="carousel-caption">
-                  <h3>New York</h3>
-                  <p>The atmosphere in New York is lorem ipsum.</p>
+                  <h3></h3>
+                  <p></p>
                 </div> 
               </div>
           
               <div class="item">
-                <img src="chicago.jpg" alt="Chicago">
+                <div class="topslider_image topslider_image-2"><!--<img src="ny.jpg" alt="">-->
+                </div>
                 <div class="carousel-caption">
-                  <h3>Chicago</h3>
-                  <p>Thank you, Chicago - A night we won't forget.</p>
+                  <h3></h3>
+                  <p></p>
                 </div> 
               </div>
           
               <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <div class="topslider_image topslider_image-3"><!--<img src="ny.jpg" alt="">-->
+                </div>
                 <div class="carousel-caption">
-                  <h3>LA</h3>
-                  <p>Even though the traffic was a mess, we had the best time.</p>
+                  <h3></h3>
+                  <p></p>
+                </div> 
+              </div>
+
+              <div class="item">
+                <div class="topslider_image topslider_image-4"><!--<img src="ny.jpg" alt="">-->
+                </div>
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
                 </div> 
               </div>
             </div>
@@ -100,65 +124,97 @@
             </a>
           </div>
         </div>
-        <div class="slider__controlbar">
-          <!--<ol>
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>-->
-            
-            <div class="controlbar__left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left"></i></div>
-            <div class="controlbar__right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right"></i></div>
-    
-          
+        <div class="slider__controlbar">     
         </div>
       </div>
     </div>
     <div class="mainframe">
         <div class="mainframe__about container-fluid" id="about">
           <div class="about__content about__content_position">
-            <h2>About Company Page</h2>
-            <h4>Lorem ipsum..</h4> 
-            <p>Lorem ipsum..</p>
+            <h2>Обо мне</h2>
+            <h4>Меня зовут Эрлис Cambará Лабрада, я родился и вырос на Кубе.</h4> 
+            <p>Я - профессиональный кубинский торседор, специалист по скручиванию сигар, который вручную изготавливает из табачных листьев сигары превосходного качества.
+Я пошел на курсы кручения сигар после окончания колледжа, это было в сентябре 1994 года. 
+Сейчас я расскажу свою историю в качестве студента. </p>
+
           </div>
         </div>
         <div class="mainframe_services container-fluid" id="services">
           <div class="services__content services__content_position">
-            <h2>About Company Page</h2>
-            <h4>Lorem ipsum..</h4> 
-            <p>Lorem ipsum..</p>
+            <h3>Услуги</h3>
+            <h4>Я изготавливаю сигары всех форматов: от небольших Робусто до более сложных, например, Торпедо. Ниже представлены наиболее популярные из около 80 форматов (или Витола) кубинских сигар. </h4> 
+            <p></p>
           </div>
         </div>
         <div class="mainframe_cigars container-fluid" id="cigars">
           <div class="cigars__content cigars__content_position">
-            <h2>Виды сигар</h2>
+            <h3>О видах сигар</h3>
             
             <div id="myCarousel2" class="carousel slide text-center" data-ride="carousel">
               <!-- Indicators -->
-              <ol class="carousel-indicators hidden-xs">
+              <ol class="carousel-indicators">
                 <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel2" data-slide-to="1"></li>
                 <li data-target="#myCarousel2" data-slide-to="2"></li>
+                <li data-target="#myCarousel2" data-slide-to="3"></li>
+                <li data-target="#myCarousel2" data-slide-to="4"></li>
+                <li data-target="#myCarousel2" data-slide-to="5"></li>
+                <li data-target="#myCarousel2" data-slide-to="6"></li>
+                <li data-target="#myCarousel2" data-slide-to="7"></li>
+                <li data-target="#myCarousel2" data-slide-to="8"></li>
+                <li data-target="#myCarousel2" data-slide-to="9"></li>
               </ol>
             
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <br><br>
-                  <h4>Cigar #1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <img class="item_image" src="content/cigars/01.jpg">
+                  <p>Витола (исп. - Vitola) - уникальное обозначение сигары. У двух сигар одной и той же витолы идентичные габариты (длина и диаметр - "ring gauge"), форма и вес.</p>
                   <br><br><br><br>
                 </div>
                 <div class="item">
-                  <br><br>
-                  <h4>Cigar #2</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <img class="item_image" src="content/cigars/02.jpg">
+                  <p>На практике, при полностью ручном изготовлении сигар это труднодостижимо, но производители стремятся к максимальной идентичности витол. Часто также используется термин "формат".</p>
                   <br><br><br><br>
                 </div>
                 <div class="item">
-                  <br><br>
-                  <h4>Cigar #3</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <img class="item_image" src="content/cigars/03.jpg">
+                  <p>Производители сигар за пределами Кубы относятся к понятию витолы достаточно вольно и зачастую присваивают сигаре весьма условное обозначение формата. Отклонения в ту или иную сторону - обычное явление.</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/04.jpg">
+                  <p>Для производителей из Никарагуа, Гондураса или Доминиканы формат - лишь посыл покупателю, говорящий о том чего он может ожидать от сигары.</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/05.jpg">
+                  <p>В кубинском производстве существует также фабричное имя сигары или витола де галера (исп. vitola de galera) - стандартное имя, данное размеру сигары. Стандартов витола де галера придерживаются все кубинские фабрики.</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/06.jpg">
+                  <p>Каждая изготовленная на Кубе сигара имеет фабричное имя и название модели. Названия модели может быть любым и варьируется от изготовителя к изготовителю. </p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/07.jpg">
+                  <p>Нектороые бренды используют фабричное имя для названия модели, другие, как в примерах ниже, выбирают уникальное и могут иметь в производственной линейке сигары одной витолы называющиеся по-разному.</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/08.jpg">
+                  <p>Например, витола Eminentes производится в настоящее время двумя брендами: H.Upmann ("Corona Major") и Partagas ("Senior" и "Petit Coronas Especiales".Однако, независимо от производителя, все эти сигары имеют одинаковые габариты: 5 1/4 (132 мм) х 42 (16,67 мм).</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/09.jpg">
+                  <p>Витола Julieta No.2 имеет габариты 7 (178 мм) х 47 (18,65 мм). В этой витоле выпускаются: Cohiba Esplendidos, Hoyo de Monterrey Churchills, Bolivar Churchills, La Gloria Cubana Tainos и многие другие.</p>
+                  <br><br><br><br>
+                </div>
+                <div class="item">
+                  <img class="item_image" src="content/cigars/10.jpg">
+                  <p>О сигарах такой витолы обычно говорят, что это - сигары формата Черчиль (Churchill). Считается, что Уинстон Черчиль предпочитал сигары именно такого формата.</p>
                   <br><br><br><br>
                 </div>
               </div>
@@ -184,39 +240,49 @@
         </div>
         <div class="mainframe_gallery container-fluid" id="gallery">
           <div class="gallery__content gallery__content_position">
+            <h3>Галерея</h3>
             <div class="content__outerrow row">
               <div class="col-md-12">
                 <div class="content__innerrow row">
-                  <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=251" class="content__innerrow_img">
+                  <a href="content/gallery/01.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/01.jpg" class="content__innerrow_img">
                   </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=252" class="content__innerrow_img">
+                  <a href="content/gallery/02.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/02.jpg" class="content__innerrow_img">
                   </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=253" class="content__innerrow_img">
+                  <a href="content/gallery/03.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/03.jpg" class="content__innerrow_img">
                   </a>
-                </div>
-                <div class="content__innerrow row">
-                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=254" class="content__innerrow_img">
-                  </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=255" class="content__innerrow_img">
-                  </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=256" class="content__innerrow_img">
+                  <a href="content/gallery/04.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/04.jpg" class="content__innerrow_img">
                   </a>
                 </div>
                 <div class="content__innerrow row">
-                  <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=251" class="content__innerrow_img">
+                  <a href="content/gallery/05.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/05.jpg" class="content__innerrow_img">
                   </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=252" class="content__innerrow_img">
+                  <a href="content/gallery/06.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/06.jpg" class="content__innerrow_img">
                   </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                    <img src="https://unsplash.it/600.jpg?image=253" class="content__innerrow_img">
+                  <a href="content/gallery/07.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/07.jpg" class="content__innerrow_img">
+                  </a>
+                  <a href="content/gallery/08.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/08.jpg" class="content__innerrow_img">
+                  </a>
+                </div>
+                <div class="content__innerrow row">
+                  <a href="content/gallery/09.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/09.jpg" class="content__innerrow_img">
+                  </a>
+                  <a href="content/gallery/10.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/10.jpg" class="content__innerrow_img">
+                  </a>
+                  <a href="content/gallery/11.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/11.jpg" class="content__innerrow_img">
+                  </a>
+                  <a href="content/gallery/12.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="content/gallery/12.jpg" class="content__innerrow_img" style="max-height:126px;">
                   </a>
                 </div>
               </div>
@@ -225,31 +291,33 @@
         </div>
         <div class="mainframe__contacts container-fluid" id="contacts">
           <div class="contacts__content contacts__content_position">
-            <h2 class="text-center">Контакты</h2>
+            <h3 class="text-center">Контакты</h3>
             <br>
             <div class="row">
               <div class="col-sm-5">
-                <p>Contact us and we'll get back to you within 24 hours.</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                <p>Желаете попробовать сигары или увидеть сигарное шоу? Свяжитесь со мной: </p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Россия, Москва</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +7 (926) 467-9446</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
               </div>
-              <div class="col-sm-7"><form method="POST" action="http://formspree.io/dervergessen@mail.ru">
+              <div class="col-sm-7">
+                <form method="POST" action="http://formspree.io/dervergessen@mail.ru">
                 <div class="row">
                   <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Ваше имя" type="text" required>
+                    <input class="form-control" id="name" name="name" placeholder="Как Вас зовут?" type="text" required>
                   </div>
                   <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
+                    <input class="form-control" id="email" name="email" placeholder="Ваш e-mail" type="email" required>
                   </div>
                 </div>
-                <textarea class="form-control" id="message" name="message" placeholder="Напишите своё сообщение" rows="5">
+                <textarea class="form-control" id="message" name="message" placeholder="Сообщение" rows="5">
                 </textarea><br>
                 <div class="row">
                   <div class="col-sm-12 form-group">
                     <button class="btn btn-default pull-right" type="submit">Отправить</button>
-                  </div> </form>
+                  </div> 
                 </div>
+                </form>
               </div>
             </div>
           </div>
