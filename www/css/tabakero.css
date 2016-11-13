@@ -228,7 +228,7 @@ body {position:relative;}
           max-width:600px;
         }
 
-        .about__story p {
+        #about__story p {
           padding:15px;
           text-align: left;
           font-size:16px;
