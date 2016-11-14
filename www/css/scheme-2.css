@@ -1,0 +1,49 @@
+.topframe, 
+.botframe,
+.navbar  {
+  background-color: #52382f !important;
+}
+
+
+.mainframe__about,
+.mainframe_services,
+.mainframe__contacts
+ {
+      background-color: #fffdf7;
+  }
+
+ .mainframe_cigars,
+ .mainframe_gallery,
+ .mainframe__fbcomments
+  {
+
+      background-color: #f4ecd6 !important;
+    }
+
+.mainframe__video {
+      
+      background-color: #b39987  !important;
+    }
+ 
+.navbar-nav li a:hover, .navbar-nav li.active a {
+          
+          background-color: #8a6f65 !important;
+        }
+  
+
+#myCarousel .carousel-indicators li:hover {
+          background-color:#8a6f65 !important;
+}
+
+
+#myCarousel2 .carousel-indicators li.active {
+          background-color:#52382f !important;
+}
+
+.contacts__content a {
+	color:#52382f;
+}
+
+.contacts__content a:hover {
+	color:#8a6f65;
+}

@@ -1,0 +1,29 @@
+.topframe, 
+.botframe,
+.navbar  {
+  background-color: #2f4e36 !important;
+}
+
+ .mainframe_cigars,
+ .mainframe_gallery,
+ .mainframe__fbcomments
+  {
+
+      background-color: #dfebe1 !important;
+    }
+
+.mainframe__video {
+      
+      background-color: #6e826f !important;
+    }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+          
+          background-color: #6e826f !important;
+        }
+  
+
+#myCarousel .carousel-indicators li:hover,
+#myCarousel2 .carousel-indicators li.active {
+          background-color:#2f4e36 !important;
+}
