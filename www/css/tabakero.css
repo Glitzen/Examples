@@ -401,3 +401,12 @@ body {position:relative;}
             color: #f7f7f7;
           }
         .botframe__content__counters {}
+
+.botframe div.counters{
+  text-align:center;
+}
+.botframe div.counter {
+  display:inline-block;
+  margin-bottom:-11px;
+
+}
