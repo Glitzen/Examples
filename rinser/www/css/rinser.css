@@ -1,0 +1,324 @@
+body {position:relative;}
+
+/* Positioners */
+        .header__content_position {
+          max-width:800px;
+          margin:0 auto;
+          padding-bottom:15px;
+        }
+
+        .map__content_position {
+          width:100%;
+          max-height:500px;
+        }
+
+        .himchistka__pricebox_position {
+          margin:0 auto;
+          
+        }
+
+        .himchistka__content_position,
+        .tonirovka__content_position,
+        .elektrika__content_position,
+        .gallery__content_position,
+        .contacts__content_position,
+        .tonirovka__cards_position,
+        .tonirovka__pricebox_position
+         {
+          max-width:800px;
+          margin:0 auto;
+          padding-bottom:15px;
+        }
+  
+.topframe {
+  background-color: #555;
+}
+    
+
+
+    .topframe__menu {
+      height: 50px;
+    }
+
+        /*.affix {
+          top:0;
+          width: 100%;
+          z-index: 9999 !important;
+        }
+               
+        .affix ~ .container-fluid {
+          position: relative;
+          top: 100px;
+        }*/
+        .navbar {
+          margin-bottom:0;
+          background-color: #555;
+          z-index: 9999;
+          border: 0;
+          font-size: 14px !important;
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+        }
+        
+        .navbar-nav {
+          width:700px;
+          margin:auto;
+          float:none !important;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+          color: #eee !important;
+        }
+        
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+          
+          background-color: #444 !important;
+        }
+        /*
+        .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+        }*/
+
+    .topframe__slider {}
+        
+        .topframe__slider_image {
+          width: 100%;
+          margin: auto;
+          height: 500px;
+          
+        }
+
+        /*.topslider_image {
+          width: 100%;
+          margin: auto;
+          height: 500px;
+          
+        }
+
+        .topslider_image-1 {
+          background: url("../content/slider/01.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-2 {
+          background: url("../content/slider/02.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-3 {
+          background: url("../content/slider/03.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-4 {
+          background: url("../content/slider/04.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+
+        .slider__carousel{
+          width:100%;
+          padding:0;
+          margin:0;
+        }
+
+        .slider__controlbar {
+          position:relative;
+          width:100%;
+          height:50px;
+        }
+        #myCarousel .carousel-inner img {
+          -webkit-filter: grayscale(90%);
+          filter: grayscale(90%); 
+          width: 100%;
+          margin: auto;
+          height:500px;
+        }
+        
+        #myCarousel .carousel-caption h3 {
+          color: #fff !important;
+        }
+        
+        #myCarousel ol.carousel-indicators {
+          bottom:-50px !important;
+          list-style: square initial initial;
+        }
+
+        #myCarousel ol.carousel-indicators li {
+          border-radius:0;
+          width:15px;
+          height:15px;
+          border: 1px solid white;
+          color:transparent;
+        }
+
+        #myCarousel .carousel-indicators .active {
+          background-color:#fff;
+          margin:0 0 1px 0 !important; 
+          
+        }
+
+        #myCarousel .carousel-indicators li:hover {
+          background-color:#777;
+          
+        }
+
+        @media (max-width: 600px) {
+          #myCarousel .carousel-caption {
+            display: none; 
+          }      
+        } */
+
+.mainframe {}
+        
+
+
+    .mainframe__himchistka {
+      background-color: #fff;
+      margin-bottom:0px;
+    }
+        .himchistka__content {
+          text-align: center;
+        }
+            .himchistka__pricebox {
+                width:600px;
+            }
+        .himchistka__blocks {
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          width:100%;
+          background-color:silver;
+        }
+
+    .mainframe_tonirovka {
+      margin-bottom:0px;
+      background-color: #fff;
+    }
+        .tonirovka__content {
+       
+        }
+
+        .tonirovka__cardline {
+          width:100%;
+          background-color:silver;
+        }
+
+            .tonirovka__cards {
+              
+             } 
+    
+                .tonirovka__card {
+                  
+                }
+        .tonirovka__pricebox {
+
+        }
+          .panel-group {
+            margin-bottom: 5px;
+          }
+              .panel-heading {
+                background-color:#f5f5f5;
+              }
+
+              .panel-heading p {
+                margin: 0;
+                color:#333;
+              }
+              
+              ..panel-heading a:hover {
+                color:#333;
+                text-decoration: none;
+              }
+
+    .mainframe_elektrika {
+      margin-bottom:0px;
+      background-color: #e5e5e5;
+    }
+        .elektrika__content {
+          text-align:center;
+        }
+
+
+    .mainframe_gallery {
+      margin-bottom:0px;
+      background-color: #e5e5e5;
+    }
+        .gallery__content {
+          padding:30px;
+          text-align:center;
+          
+        }
+
+        .gallery__content h3 {
+          margin:0 0 20px 0;
+          
+        }
+
+        .modal-dialog {
+          margin-top:70px;  
+        }
+
+            .content__outerrow {
+              padding:15px 0;
+              background-color:white;
+              border-radius:10px;
+              text-align:center;
+
+            }
+        
+            .content__innerrow {
+              margin:0;
+              
+            }
+                .content__innerrow a {
+                  padding:0;
+                }
+
+                .content__innerrow_img  {
+                  padding:5px;
+                  width: 100%;
+                }
+
+
+      
+    .mainframe__contacts {
+      margin-bottom:0px;
+      background-color: #fff;
+    }
+        .contacts__content {
+       
+        }
+        
+    .mainframe__map {
+    } 
+        .map__content {
+
+        }
+        
+        
+        
+
+.botframe {
+  height:200px;
+  background-color: #555;
+}
+    .botframe__content {}
+    
+        .botframe__content_copyright {}
+        .botframe__content_upper  {
+          text-align:center;
+          padding-top:20px;
+        }
+          .botframe__content_upper .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f7f7f7;
+          }
+        .botframe__content__counters {}
+
