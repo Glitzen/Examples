@@ -29,7 +29,7 @@
 
     <div class="topframe" id="top">
       <div class="topframe__menu">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default data-spy="affix" data-offset-top="100"">
           <div class="container">
             <div class="navbar-header">
               <a class="navbar-brand" href="#top"></a>
@@ -55,6 +55,7 @@
       </div>
       <div class="topframe__slider">
         <div class="topframe__slider_image">
+        <!--<img src="./content/front_photo.jpg" width="100%" height="550px" alt="welcome">-->
         </div>
         <!-- <div class="slider__carousel">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -124,42 +125,146 @@
         <div class="mainframe__himchistka container-fluid" id="himchistka">
           <div class="himchistka__content himchistka__content_position">
             <h2>Химчистка</h2>
-            <h4></h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4></h4>
+
+            
           </div>
           <div class="himchistka__blocks">
             <div class="himchistka__blocks_content himchistka__content_position clearfix">
-              <div class="col-xs-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="himchistka__blocks_maintext">Современные технологии легко устраняют все виды застарелых загрязнений, превращая салон Вашего автомобиля в чистое и уютное пространство, в котором приятно находиться.</p>
+              
+              <div class="col-xs-4 blocks__icon_block">
+              <img src="./content/icons/h_01.png" alt="professional" width="100";> 
+              <p>Опытные специалисты</p>
               </div>
-              <div class="col-xs-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="col-xs-4 blocks__icon_block">
+              <img src="./content/icons/h_02.png" alt="professional" width="100";> 
+              <p>Современные средства автохимии</p>
               </div>
-              <div class="col-xs-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="col-xs-4 blocks__icon_block">
+              <img src="./content/icons/h_03.png" alt="professional" width="100";> 
+              <p>Среднее время работы 4-6 часов</p>
               </div>
 
             </div>
           </div>
           <div class="himchistka__pricebox himchistka__pricebox_position container">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-              <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <ul class="nav nav-tabs himchistka__pricebox_nav">
+              <li class="active"><a data-toggle="tab" href="#home">Комплексная химчистка</a></li>
+              <li><a data-toggle="tab" href="#menu1">Частичная химчистка</a></li>
             </ul>
             
-            <div class="tab-content">
+            <div class="tab-content himchistka__pricebox_content">
               <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <div class="col-xs-6 himchistka__content_pricebox-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Класс автомобиля</h3><h3>Стоимость химчистки</h3>
+                <div class="tab_pricebox_row row">
+                  <div class="col-xs-6 himchistka__content_pricebox-left">
+                  <img src="./content/icons/auto_01.png" alt="professional" width="100";>
+                  <p>Седан/Хэтчбэк</p>
+                  </div>
+                  
+                  <div class="col-xs-6 himchistka__content_pricebox-right">
+                  <p class="himchistka__pricebox_price">3 999 руб.</p>
+                  </div>
                 </div>
-                <div class="col-xs-6 himchistka__content_pricebox-right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tab_pricebox_row row">
+                  <div class="col-xs-6 himchistka__content_pricebox-left">
+                  <img src="./content/icons/auto_02.png" alt="professional" width="100";>
+                  <p>Универсал/Кроссовер</p>
+                  </div>
+                  
+                  <div class="col-xs-6 himchistka__content_pricebox-right">
+                  <p class="himchistka__pricebox_price">4 999 руб.</p>
+                  </div>  
+                </div>
+                <div class="tab_pricebox_row row">
+                  <div class="col-xs-6 himchistka__content_pricebox-left">
+                  <img src="./content/icons/auto_03.png" alt="professional" width="100";>
+                  <p>Джип 5/7 мест</p>
+                  </div>
+                  
+                  <div class="col-xs-6 himchistka__content_pricebox-right">
+                  <p class="himchistka__pricebox_price">5 499 руб. / 5 999 руб.</p>
+                  </div>
                 </div>
               </div>
               <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <table id="table0">
+                    <tbody><tr>
+                        <th class="table-center" rowspan="3">Часть салона</th>                        
+                        <th class="table-center" colspan="2">Стоимость</th>                        
+                      </tr>
+                    <tr>                        
+                        <th class="table-center table-unborder">
+                        <img class="himchistka_table_image" src="./content/icons/auto_01.png">
+                        </th>
+                        <th class="table-center table-unborder">
+                        <img class="himchistka_table_image" src="./content/icons/auto_03.png">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="table-center">Седан</th>
+                        
+                        <th class="table-center">Кроссовер</th>
+                      
+                      </tr>
+
+                    <tr>
+                        <td class="td-left">Потолок</td>
+                        <td>1100</td>
+                        <td>1400</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Пол</td>
+                        <td>1200</td>
+                        <td>1500</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Стойки (4/6 шт.)</td>
+                        <td>400</td>
+                        <td>500</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Торпедо</td>
+                        <td>400</td>
+                        <td>500</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Сиденье (1 шт.)</td>
+                        <td>400</td>
+                        <td>500</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Двери (4 шт.)</td>
+                        <td>500</td>
+                        <td>600</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Багажник</td>
+                        <td>500</td>
+                        <td>600</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Ремни</td>
+                        <td>400</td>
+                        <td>500</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="td-left">Пол</td>
+                        <td>1200</td>
+                        <td>1500</td>
+                        
+                      </tr>
+                      </tbody>
+                  </table>
               </div>
             </div>
           </div>
@@ -169,164 +274,159 @@
         </div>
         <div class="mainframe_tonirovka container-fluid" id="tonirovka">
           <div class="tonirovka__content tonirovka__content_position">
-            <h3>Тонировка</h3>
-            <h4></h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Тонировка</h2>
+            
+            <p>Стекло автомобиля имеет две стороны. <br>По одну находится владелец авто, по другую - дорога и внешний мир.</p>
+            
           </div>
           <div class="tonirovka__cardline clearfix">
+            <div class="tonirovka__cardline_textbox">
+              <p>Чем полезна тонировка?</p>
+            </div>
             <div class="tonirovka__cards tonirovka__cards_position">
-              <div class="col-xs-3">
+              <div class="col-xs-3 tonirovka__card_block">
                 <div class="tonirovka__card">
-                  <div class="card__icon" style="width:100%">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tonirovka__card_icon">
+                  <img src="./content/icons/t_01.png" alt="professional" width="100";> 
                   </div>
                   <div class="tonirovka__card_container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    
+                    <p>Защита от травмирования осколками стекла при его разбитии</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 tonirovka__card_block">
                 <div class="tonirovka__card">
-                  <div class="card__icon" style="width:100%">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tonirovka__card_icon">
+                  <img src="./content/icons/t_02.png" alt="professional" width="100";> 
                   </div>
                   <div class="tonirovka__card_container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    
+                    <p>Предотвращение кражи личных вещей из салона автомобиля</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 tonirovka__card_block">
                 <div class="tonirovka__card">
-                  <div class="card__icon" style="width:100%">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tonirovka__card_icon">
+                  <img src="./content/icons/t_03.png" alt="professional" width="100";> 
                   </div>
                   <div class="tonirovka__card_container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    
+                    <p>Препятсткие внешнему наблюдению пассажиров</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-xs-3 tonirovka__card_block">
                 <div class="tonirovka__card">
-                  <div class="card__icon" style="width:100%">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tonirovka__card_icon">
+                  <img src="./content/icons/t_04.png" alt="professional" width="100";> 
                   </div>
                   <div class="tonirovka__card_container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    
+                    <p>Защитные плёнки ограничивают поступление солнечных лучей в салон</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="tonirovka__pricebox tonirovka__pricebox_position">
-            
-             <div class="panel-group">
+              <h4>Стоимость и пакеты услуг:</h4>
+              <div class="panel-group">
                <a data-toggle="collapse" href="#collapse1">
                <div class="panel panel-default">
                  <div class="panel-heading">
                    <h4 class="panel-title">
-                     <p>Collapsible list group</p>
+                     <p>Тонирование плёнками с 5-15-30-50-70-60-90-95% затемнения</p><span class="glyphicon glyphicon-chevron-down"></span>
                    </h4>
                  </div></a>
                  <div id="collapse1" class="panel-collapse collapse">
                    <table id="table1">
                     <tbody><tr>
-                        <th>Часть корпуса</th>
-                        <th></th>
-                        <th>Стоимость</th>
-                        <th></th>
+                        <th class="table-center" rowspan="2">Часть корпуса</th>                        
+                        <th class="table-center" colspan="3">Стоимость</th>                        
                       </tr>
-                    <tr>
-                        <th></th>
-                        <th>Средний</th>
-                        <th>Кроссовер / Бизнес</th>
-                        <th>Минивен / Джип</th>
+                    <tr>                        
+                        <th class="table-center">Средний</th>
+                        <th class="table-center">Кроссовер / Бизнес</th>
+                        <th class="table-center">Минивен / Джип</th>
                       </tr>
                     
                       <tr>
-                        <td><b>Kylon</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="td-left" colspan="4"><b>Плёнка Kylon</b></td>
                       </tr>
                     
                     <tr>
-                        <td>Все стекла</td>
+                        <td class="td-left">Все стекла</td>
                         <td>4500</td>
                         <td>4700</td>
                         <td>5650</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
+                        <td class="td-left">Все, кроме лобового стекла</td>
                         <td>3700</td>
                         <td>4000</td>
                         <td>5000</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме передних стекол</td>
+                        <td class="td-left">Все, кроме передних стекол</td>
                         <td>3200</td>
                         <td>3700</td>
                         <td>4500</td>
                       </tr>
                       <tr>
-                        <td>Лобовое или заднее стекло</td>
+                        <td class="td-left">Лобовое или заднее стекло</td>
                         <td>2000</td>
                         <td>2300</td>
                         <td>2600</td>
                       </tr>
                       <tr>
-                        <td>Одно боковое стекло</td>
+                        <td class="td-left">Одно боковое стекло</td>
                         <td>850</td>
                         <td>1200</td>
                         <td>1350</td>
                       </tr>
                       <tr>
-                        <td>Одна форточка</td>
+                        <td class="td-left">Одна форточка</td>
                         <td>750</td>
                         <td>900</td>
                         <td>900</td>
                       </tr>
                       <tr>
-                        <td><b>SunControl / Luxman</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="td-left" colspan="4"><b>Плёнка SunControl / Luxman</b></td>
                       </tr>
                       <tr>
-                        <td>Все стекла</td>
+                        <td class="td-left">Все стекла</td>
                         <td>5500</td>
                         <td>5700</td>
                         <td>6900</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
+                        <td class="td-left">Все, кроме лобового стекла</td>
                         <td>4400</td>
                         <td>4800</td>
                         <td>5600</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме передних стекол</td>
+                        <td class="td-left">Все, кроме передних стекол</td>
                         <td>3800</td>
                         <td>4300</td>
                         <td>5200</td>
                       </tr>
                       <tr>
-                        <td>Лобовое или заднее стекло</td>
+                        <td class="td-left">Лобовое или заднее стекло</td>
                         <td>2500</td>
                         <td>2800</td>
                         <td>2800</td>
                       </tr>
                       <tr>
-                        <td>Одно боковое стекло</td>
+                        <td class="td-left">Одно боковое стекло</td>
                         <td>1100</td>
                         <td>1450</td>
                         <td>1600</td>
                       </tr>
                       <tr>
-                        <td>Одна форточка</td>
+                        <td class="td-left">Одна форточка</td>
                         <td>900</td>
                         <td>1050</td>
                         <td>1050</td>
@@ -343,339 +443,200 @@
                <div class="panel panel-default">
                  <div class="panel-heading">
                    <h4 class="panel-title">
-                     <p>Collapsible list group</p>
+                     <p>Демонтаж плёнки</p><span class="glyphicon glyphicon-chevron-down"></span>
                    </h4>
                  </div></a>
                  <div id="collapse2" class="panel-collapse collapse">
                    <table id="table2">
                     <tbody><tr>
-                        <th>Часть корпуса</th>
-                        <th></th>
-                        <th>Стоимость</th>
-                        <th></th>
+                        <th class="table-center" rowspan="2">Часть корпуса</th>                        
+                        <th class="table-center" colspan="3">Стоимость</th>                        
                       </tr>
+                    <tr>                        
+                        <th class="table-center">Средний</th>
+                        <th class="table-center">Кроссовер / Бизнес</th>
+                        <th class="table-center">Минивен / Джип</th>
+                      </tr>
+                  
                     <tr>
-                        <th></th>
-                        <th>Средний</th>
-                        <th>Кроссовер / Бизнес</th>
-                        <th>Минивен / Джип</th>
-                      </tr>
-                    
-                      <tr>
-                        <td><b>Kylon</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    
-                    <tr>
-                        <td>Все стекла</td>
-                        <td>4500</td>
-                        <td>4700</td>
-                        <td>5650</td>
+                        <td class="td-left">Все стекла</td>
+                        <td>2 000</td>
+                        <td>2 200</td>
+                        <td>2 500</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>3700</td>
-                        <td>4000</td>
-                        <td>5000</td>
-                      </tr>
-                      <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3200</td>
-                        <td>3700</td>
-                        <td>4500</td>
-                      </tr>
-                      <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2000</td>
-                        <td>2300</td>
-                        <td>2600</td>
-                      </tr>
-                      <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>850</td>
-                        <td>1200</td>
-                        <td>1350</td>
-                      </tr>
-                      <tr>
-                        <td>Одна форточка</td>
-                        <td>750</td>
+                        <td class="td-left">Лобовое или заднее стекло</td>
                         <td>900</td>
                         <td>900</td>
+                        <td>1000</td>
                       </tr>
                       <tr>
-                        <td><b>SunControl / Luxman</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="td-left">Одно боковое стекло</td>
+                        <td>400</td>
+                        <td>400</td>
+                        <td>400</td>
                       </tr>
                       <tr>
-                        <td>Все стекла</td>
-                        <td>5500</td>
-                        <td>5700</td>
-                        <td>6900</td>
+                        <td class="td-left">Одна форточка</td>
+                        <td>2750</td>
+                        <td>250</td>
+                        <td>300</td>
                       </tr>
-                      <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>4400</td>
-                        <td>4800</td>
-                        <td>5600</td>
-                      </tr>
-                      <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3800</td>
-                        <td>4300</td>
-                        <td>5200</td>
-                      </tr>
-                      <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2500</td>
-                        <td>2800</td>
-                        <td>2800</td>
-                      </tr>
-                      <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>1100</td>
-                        <td>1450</td>
-                        <td>1600</td>
-                      </tr>
-                      <tr>
-                        <td>Одна форточка</td>
-                        <td>900</td>
-                        <td>1050</td>
-                        <td>1050</td>
-                      </tr>
+                     
                     </tbody>
                   </table>
                    
                  </div>
                </div>
              </div>
-            
-            
               <div class="panel-group">
                 <a data-toggle="collapse" href="#collapse3">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <p>Collapsible list group</p>
+                      <p>Тонирование атермальной плёнкой (ГОСТ) 0 - 30%</p><span class="glyphicon glyphicon-chevron-down"></span>
                     </h4>
                   </div></a>
                   <div id="collapse3" class="panel-collapse collapse">
                    <table id="table3">
                     <tbody><tr>
-                        <th>Часть корпуса</th>
-                        <th></th>
-                        <th>Стоимость</th>
-                        <th></th>
+                        <th class="table-center" rowspan="2">Часть корпуса</th>                        
+                        <th class="table-center" colspan="3">Стоимость</th>                        
                       </tr>
-                    <tr>
-                        <th></th>
-                        <th>Средний</th>
-                        <th>Кроссовер / Бизнес</th>
-                        <th>Минивен / Джип</th>
+                    <tr>                        
+                        <th class="table-center">Средний</th>
+                        <th class="table-center">Кроссовер / Бизнес</th>
+                        <th class="table-center">Минивен / Джип</th>
                       </tr>
                     
                       <tr>
-                        <td><b>Kylon</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="td-left" colspan="4"><b>Плёнка Armolan</b></td>
+                        
                       </tr>
                     
                     <tr>
-                        <td>Все стекла</td>
-                        <td>4500</td>
-                        <td>4700</td>
-                        <td>5650</td>
+                        <td class="td-left">Все стекла</td>
+                        <td>7 000</td>
+                        <td>8 500</td>
+                        <td>10 300</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>3700</td>
-                        <td>4000</td>
-                        <td>5000</td>
+                        <td class="td-left">Все, кроме лобового стекла</td>
+                        <td>5 600</td>
+                        <td>5 900</td>
+                        <td>7 000</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3200</td>
-                        <td>3700</td>
-                        <td>4500</td>
+                        <td class="td-left">Все, кроме передних стекол</td>
+                        <td>4 200</td>
+                        <td>4 900</td>
+                        <td>6 100</td>
                       </tr>
                       <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2000</td>
-                        <td>2300</td>
-                        <td>2600</td>
+                        <td class="td-left">Лобовое или заднее стекло</td>
+                        <td>3 400</td>
+                        <td>4 100</td>
+                        <td>4 100</td>
                       </tr>
                       <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>850</td>
-                        <td>1200</td>
-                        <td>1350</td>
+                        <td class="td-left">Одно боковое стекло</td>
+                        <td>2 700</td>
+                        <td>3 200</td>
+                        <td>3 200</td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="td-left" colspan="4"><b>Плёнка UltraVision/SunControl</b></td>
+                        
                       </tr>
                       <tr>
-                        <td>Одна форточка</td>
-                        <td>750</td>
-                        <td>900</td>
-                        <td>900</td>
+                        <td class="td-left">Все стекла</td>
+                        <td>11 000</td>
+                        <td>12 400</td>
+                        <td>14 850</td>
                       </tr>
                       <tr>
-                        <td><b>SunControl / Luxman</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="td-left">Все, кроме лобового стекла</td>
+                        <td>9 300</td>
+                        <td>9 800</td>
+                        <td>12 500</td>
                       </tr>
                       <tr>
-                        <td>Все стекла</td>
-                        <td>5500</td>
-                        <td>5700</td>
-                        <td>6900</td>
+                        <td class="td-left">Все, кроме передних стекол</td>
+                        <td>7 900</td>
+                        <td>8 900</td>
+                        <td>10 000</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>4400</td>
-                        <td>4800</td>
-                        <td>5600</td>
+                        <td class="td-left">Лобовое или заднее стекло</td>
+                        <td>7 000</td>
+                        <td>7 500</td>
+                        <td>8 000</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3800</td>
-                        <td>4300</td>
-                        <td>5200</td>
+                        <td class="td-left">Одно боковое стекло</td>
+                        <td>3 400</td>
+                        <td>3 400</td>
+                        <td>3 400</td>
                       </tr>
-                      <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2500</td>
-                        <td>2800</td>
-                        <td>2800</td>
-                      </tr>
-                      <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>1100</td>
-                        <td>1450</td>
-                        <td>1600</td>
-                      </tr>
-                      <tr>
-                        <td>Одна форточка</td>
-                        <td>900</td>
-                        <td>1050</td>
-                        <td>1050</td>
-                      </tr>
+                     
                     </tbody>
                   </table>
                     
                   </div>
                 </div>
               </div>
-
               <div class="panel-group">
                 <a data-toggle="collapse" href="#collapse4">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <p>Collapsible list group</p>
+                      <p>Тонирование защитной плёнкой (броня)</p><span class="glyphicon glyphicon-chevron-down"></span>
                     </h4>
                   </div></a>
                   <div id="collapse4" class="panel-collapse collapse">
                    <table id="table4">
                     <tbody><tr>
-                        <th>Часть корпуса</th>
-                        <th></th>
-                        <th>Стоимость</th>
-                        <th></th>
+                        <th class="table-center" rowspan="2">Часть корпуса</th>                        
+                        <th class="table-center" colspan="3">Стоимость</th>                        
                       </tr>
-                    <tr>
-                        <th></th>
-                        <th>Средний</th>
-                        <th>Кроссовер / Бизнес</th>
-                        <th>Минивен / Джип</th>
+                    <tr>                        
+                        <th class="table-center">Средний</th>
+                        <th class="table-center">Кроссовер / Бизнес</th>
+                        <th class="table-center">Минивен / Джип</th>
                       </tr>
                     
                       <tr>
-                        <td><b>Kylon</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    
-                    <tr>
-                        <td>Все стекла</td>
-                        <td>4500</td>
-                        <td>4700</td>
-                        <td>5650</td>
+                        <td class="td-left" colspan="4"><b>Антивандальная плёнка Clear Plex (наружняя)</b></td>
+                       
                       </tr>
                       <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>3700</td>
-                        <td>4000</td>
-                        <td>5000</td>
+                        <td class="td-left">Лобовое стекло</td>
+                        <td>12 000</td>
+                        <td>12 500</td>
+                        <td>13 500</td>
                       </tr>
                       <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3200</td>
-                        <td>3700</td>
-                        <td>4500</td>
+                        <td class="td-left">Одно боковое стекло</td>
+                        <td>6 300</td>
+                        <td>6 300</td>
+                        <td>6 700</td>
                       </tr>
                       <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2000</td>
-                        <td>2300</td>
-                        <td>2600</td>
+                        <td class="td-left" colspan="4"><b>Антивандальная плёнка Armolan (внутренняя)</b></td>
+                       
                       </tr>
                       <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>850</td>
-                        <td>1200</td>
-                        <td>1350</td>
+                        <td class="td-left">Лобовое стекло</td>
+                        <td>4 700</td>
+                        <td>5 700</td>
+                        <td>6 700</td>
                       </tr>
                       <tr>
-                        <td>Одна форточка</td>
-                        <td>750</td>
-                        <td>900</td>
-                        <td>900</td>
-                      </tr>
-                      <tr>
-                        <td><b>SunControl / Luxman</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Все стекла</td>
-                        <td>5500</td>
-                        <td>5700</td>
-                        <td>6900</td>
-                      </tr>
-                      <tr>
-                        <td>Все, кроме лобового стекла</td>
-                        <td>4400</td>
-                        <td>4800</td>
-                        <td>5600</td>
-                      </tr>
-                      <tr>
-                        <td>Все, кроме передних стекол</td>
-                        <td>3800</td>
-                        <td>4300</td>
-                        <td>5200</td>
-                      </tr>
-                      <tr>
-                        <td>Лобовое или заднее стекло</td>
-                        <td>2500</td>
-                        <td>2800</td>
-                        <td>2800</td>
-                      </tr>
-                      <tr>
-                        <td>Одно боковое стекло</td>
-                        <td>1100</td>
-                        <td>1450</td>
-                        <td>1600</td>
-                      </tr>
-                      <tr>
-                        <td>Одна форточка</td>
-                        <td>900</td>
-                        <td>1050</td>
-                        <td>1050</td>
+                        <td class="td-left">Одно боковое стекло</td>
+                        <td>2 500</td>
+                        <td>2 500</td>
+                        <td>3 100</td>
                       </tr>
                     </tbody>
                   </table>
@@ -687,26 +648,25 @@
         </div>
         <div class="mainframe_elektrika container-fluid" id="elektrika">
           <div class="elektrika__content elektrika__content_position">
-            <h3></h3>
-            <h4></h4> 
-            <p></p>
-            <div class="row">
-              <div class="col-sm-4"><h2>Collapsible List Group</h2>
-             <p>Click on the collapsible panel to open and close it.</p>
+            <h2>Автоэлектрика</h2>
+            
+            <div class="elektrika__content_row row">
+              <div class="col-sm-4 elektrika__content_item"><img src="./content/parktronic.png" width="100">
+             <p>Установка парктроников</p>
              </div>
-              <div class="col-sm-4"><h2>Collapsible List Group</h2>
-             <p>Click on the collapsible panel to open and close it.</p>
+              <div class="col-sm-4 elektrika__content_item"><img src="./content/audio.png" width="100">
+             <p>Установка аудио/видео систем</p>
              </div>
-              <div class="col-sm-4"><h2>Collapsible List Group</h2>
-             <p>Click on the collapsible panel to open and close it.</p>
+              <div class="col-sm-4 elektrika__content_item"><img src="./content/signal.png" width="100">
+             <p>Установка сигнализаций StarLine</p>
              </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6"><h2>Collapsible List Group</h2>
-             <p>Click on the collapsible panel to open and close it.</p>
+            <div class="elektrika__content_row elektrika__content_row-2 row">
+              <div class="col-sm-6 elektrika__content_item"><img src="./content/shumka.png" width="100">
+             <p>Установка шумоизоляции</p>
              </div>
-              <div class="col-sm-6"><h2>Collapsible List Group</h2>
-             <p>Click on the collapsible panel to open and close it.</p>
+              <div class="col-sm-6 elektrika__content_item"><img src="./content/xenon.png" width="100">
+             <p>Установка ксенона</p>
              </div>
             </div>
               
@@ -715,7 +675,7 @@
         </div>
         <div class="mainframe_gallery container-fluid" id="gallery">
           <div class="gallery__content gallery__content_position">
-            <h3></h3>
+            <h2>Наши работы</h2>
             <div class="content__outerrow row">
               <div class="col-md-12">
                 <div class="content__innerrow row">
@@ -752,14 +712,14 @@
         </div>
         <div class="mainframe__contacts container-fluid" id="contacts">
           <div class="contacts__content contacts__content_position">
-            <h3 class="text-center">Контакты</h3>
+            <h2 class="text-center">Контакты</h2>
             <br>
-            <div class="row">
+            <div class="contacts__content_row row">
               <div class="col-sm-5">
                 <p></p>
-                <p><span class="glyphicon glyphicon-map-marker"></span></p>
-                <p><span class="glyphicon glyphicon-phone"></span></p>
-                <p><span class="glyphicon glyphicon-envelope"></span> </p> 
+                <p><span class="glyphicon glyphicon-map-marker"></span> Москва</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +7 (495) 123-4567</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> email@email.com</p> 
                 <p style="font-size: 30px">
                 <a href=""><span class="fa fa-vk"></span></a> <a href=""><span class="fa fa-facebook-official"></span></a> <a href=""><span class="fa fa-instagram"></span></a>
                 </p>
@@ -788,6 +748,33 @@
         </div>
         <div class="mainframe__map container-fluid" id="map">
           <div class="map__content map__content_position">
+          <div id="googleMap"></div>
+
+            <!-- Add Google Maps -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6byymfkjmYzeSGOX5z_G6ywbOSoCfUtQ&callback=initMap"></script>
+            <script>
+            var myCenter = new google.maps.LatLng(55.755760, 37.615762);
+            
+            function initialize() {
+            var mapProp = {
+            center:myCenter,
+            zoom:12,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
+            var marker = new google.maps.Marker({
+            position:myCenter,
+            });
+            
+            marker.setMap(map);
+            }
+            
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
           </div>
         </div>
     </div>
