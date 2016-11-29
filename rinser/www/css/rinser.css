@@ -84,7 +84,8 @@ body {
         .gallery__content_position,
         .contacts__content_position,
         .tonirovka__cards_position,
-        .tonirovka__pricebox_position
+        .tonirovka__pricebox_position,
+        .botframe__content_position-text
          {
           max-width:800px;
           margin:0 auto;
@@ -100,11 +101,21 @@ body {
 .topframe {
   background-color: #555;
 }
-    
-
+    .topframe__shield{
+      height: 130px;
+      width: 200px;
+      background-color: rgba(63, 119, 165, 0.17);
+      position: absolute;
+      left: 160px;
+      z-index: 9000;
+    }
+    .topframe__gap {
+      height: 50px;
+      background-color: #21475e;
+    }
 
     .topframe__menu {
-      height: 150px;
+      height: 80px;
       background-color: #21475e;
     }
 
@@ -119,29 +130,41 @@ body {
           top: 100px;
         }
         .navbar {
+          /* position: relative; */
+          /* top: 70px; */
           margin-bottom:0;
-          background-color: #21475e;
-          z-index: 9999;
+          background-color: #26526d;
+          z-index: 8888;
           border: 0;
           font-size: 14px !important;
           line-height: 1.42857143 !important;
-          letter-spacing: 4px;
+          letter-spacing: 1px;
           border-radius: 0;
+          box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
         }
         
         .navbar-nav {
           /*width:750px;*/
           margin:auto;
-          float:none !important;
+          float: right !important;
         }
 
         .navbar li a, .navbar .navbar-brand {
+          
           color: #eee !important;
+          
+        }
+        .navbar .navbar-brand {
+        margin-left: 0 !important;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 22px;
+        z-index: 9999;
         }
         
         .navbar-nav li a:hover, .navbar-nav li.active a {
           
-          background-color: #444 !important;
+background-color: #406f8a !important;
         }
        
         .navbar-default .navbar-toggle {
@@ -185,6 +208,7 @@ body {
           padding: 10px 0 10px 0;
           width:100%;
           background-color: #dce3e7;
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
         }
           .himchistka__blocks_content{
             text-align:center;
@@ -226,11 +250,13 @@ body {
         .himchistka__pricebox_nav li a{
           background-color: #c5d3da;
           color: #4b819b;
+          font-weight: bold;
           border-bottom: 1px solid #4b819b;
         }  
         .himchistka__pricebox_nav li a:hover {
           background-color:#dce3e7;
           color: #4b819b;
+          font-weight: bold;
           border-color: #d3dce0;
           border-bottom: 1px solid #4b819b;
         }
@@ -300,6 +326,7 @@ text-decoration: underline;
         .tonirovka__cardline {
           width:100%;
           background-color: #3f86a5;
+          /* box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); */
         }
 
             .tonirovka__cards {
@@ -341,6 +368,7 @@ box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
                   padding: 10px;
                   text-align:center;
                   background-color: #dce3e7;
+                  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.25);
                 }
                 .tonirovka__cardline_textbox p {
                   margin:0;
@@ -370,7 +398,7 @@ color: #aec5d0;
 
               .panel-heading p {
                 margin: 0;
-                color:#4b819b;
+                color: #2c5b72;
                 font-weight:bold;
               }
               
@@ -396,18 +424,7 @@ color: #aec5d0;
                 box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
               }
 
-              #table0{
-                width: 450px;
-                margin: 0 auto !important;
-               }
-               #table0 th{
-                background-color: #d3dce0;
-                color:#2c5b72;
-               }
-               #table0 td, #table0 th{
-                
-                border-color:#2c5b72;
-               }
+              
 
 
                #menu1 {
@@ -430,12 +447,27 @@ color: #aec5d0;
               }
 
               tr:nth-child(2n) {
-                background-color: #aec5d0;
+                background-color: #ddd;
               }
+              
               th {
                 background-color: #4b819b;
                 color: #eee;
               }
+              #table0 tr:nth-child(2n) {
+                background-color: #aec5d0;}
+              #table0{
+                width: 450px;
+                margin: 0 auto !important;
+               }
+               #table0 th{
+                background-color: #d3dce0;
+                color:#2c5b72;
+               }
+               #table0 td, #table0 th{
+                
+                border-color:#2c5b72;
+               }
               .table-unborder {
                 border-bottom:none;
               }
@@ -454,7 +486,7 @@ color: #aec5d0;
           max-width: 65%;
           margin: auto;
         }
-        .elektrika__content_item {color: #eee;padding-top: 10px;padding-bottom: 10px;/* margin-bottom: 30px; */height: 178px;margin: 0 auto 20px auto;border-radius: 10px;border: 2px solid #dce3e7;background-color: #4b819b;max-width: 250px;min-width: 250px;}
+        .elektrika__content_item {color: #eee;padding-top: 10px;padding-bottom: 10px;/* margin-bottom: 30px; */height: 178px;margin: 0 auto 20px auto;border-radius: 10px;border: 2px solid #dce3e7;background-color: #4b819b;max-width: 250px;min-width: 250px;box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);}
 
 .col-sm-4.elektrika__content_item {}
         .elektrika__content_item p {
@@ -465,6 +497,7 @@ color: #aec5d0;
     .mainframe_gallery {
       margin-bottom:0px;
       background-color: #aec5d0;
+      /* box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); */
     }
         .gallery__content {
           padding: 10px 30px 30px 30px;
@@ -548,10 +581,13 @@ color: #aec5d0;
         
 
 .botframe {
-  height:200px;
-  background-color: #21475e;
+  /* padding: 0; */
+  height: 150px;
+  background-color: #102e44;
 }
-    .botframe__content {}
+    .botframe__content {
+    margin: 0;
+}
     
         .botframe__content_copyright {}
         .botframe__content_upper  {
@@ -563,5 +599,23 @@ color: #aec5d0;
             margin-bottom: 20px;
             color: #f7f7f7;
           }
-        .botframe__content__counters {}
+        .botframe__content__block {
+          width: 100%;
+          background-color: #26526d;
+        }
+        .botframe__content_brand {
+          color: #fff;
+          float: left;
+          display: inline-block;
+          margin: 21px 0;
+        }
+        .botframe__content_contacts {
+          color: #fff;
+          display: inline-block;
+          float: right;
+          vertical-align: middle;
+          margin: 10px 0;
+        }
+
+
 
