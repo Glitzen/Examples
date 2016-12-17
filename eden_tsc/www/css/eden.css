@@ -181,8 +181,9 @@ div .absolute .language:focus {
     padding-top: 30px;  }
 
 #p4_back p {
-    width:95%;
-    margin-top:20%; }
+    width:75%;
+    margin-top:15px;
+    font-size:16px;}
 
 /* Slides themselves */
 #main0 {
@@ -345,12 +346,23 @@ ul .but a:focus {
         background: url(../css/3_1280.jpg) no-repeat center;
         background-size: cover; }
     }
+@media only screen and (width:1280px) and (height:1024px) {
+    #matrix{
+        margin-top:20%;
+    }
+}
 
 @media only screen and (max-height:800px) {
     ul .but a {
         padding-top:0;  }
     #matrix .node {
         width:29%;  }   
+}
+
+@media only screen and (min-width:1750px) {
+    #nod1 {
+        width:60%;
+    }  
 }
 
 
