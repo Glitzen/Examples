@@ -5,6 +5,9 @@ html, body{
     color: #ffe2b4; 
     font-family: 'a_AvanteTck Medium', arial;}
 
+
+
+
 #main_frame {
     height:100%; }
 
@@ -183,6 +186,11 @@ div .absolute .language:focus {
 
 #p5_back ol {
     list-style-type: disc;
+}
+#p5_back a {
+    color:white;
+    font-weight:bold;
+    text-decoration:underline;
 }
 
 #p3_back p {
