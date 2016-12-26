@@ -443,10 +443,15 @@ ul .but a:focus {
 }
 
 /* Fix to collapsing blackstripe <p> */
-@media only screen and (max-width:370px) {
+@media only screen and (max-width:380px) {
     #blackstripe_row p {
         font-size:11px; }
     div.absolute {
         font-size:10px; }
-    ul .but a {font-size:12px;}
+    ul .but a {font-size:12px;
+       padding-top:3px;}
 }
+
+@media only screen and (max-width:370px) {
+        #menu_service {display:none !important;}
+    }

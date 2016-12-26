@@ -1,0 +1,9 @@
+#central_frame p {
+	text-align:left !important;
+}
+
+@media only screen and (max-width:380px) {
+  
+    ul .but a {
+        padding-top:3px;}
+}
