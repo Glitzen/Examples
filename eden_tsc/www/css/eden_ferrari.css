@@ -157,6 +157,8 @@ div .absolute .language:focus {
     background-color: rgba(121, 93, 113, 0.50);  }
 
 #p5_back {
+   
+    overflow-y:scroll;
     height:100%;
     background-color: rgba(35, 31, 32, 0.50);  }
 
@@ -177,7 +179,11 @@ div .absolute .language:focus {
     margin-top:20%; }
 #p5_back p {
     width:95%;
-    margin-top:20%; }
+    margin-top:20px; }
+
+#p5_back ol {
+    list-style-type: disc;
+}
 
 #p3_back p {
     width:95%;
