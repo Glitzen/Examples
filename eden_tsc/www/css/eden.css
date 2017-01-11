@@ -437,3 +437,31 @@ ul .but a:focus {
     font-size:16px;
     }
 }
+
+@media only screen and (min-width:1920px) and (min-height:1200) {
+ #main0 {
+    background: url(../content/company_1920.jpg) no-repeat;
+     background-size:cover; 
+  }
+
+#main3{
+    background: url(../content/contacts_1920.jpg) no-repeat;
+    background-size:cover; 
+  }
+/*
+#main4{
+    background: url(../content/tours_1920.jpg) no-repeat;
+    background-size:cover; 
+     }
+*/
+
+
+#main2 {
+    background: url(../content/partners_1920.jpg) no-repeat;
+    background-size:cover; 
+       }
+
+#main1 {
+    background: url(../content/services_1920.jpg) no-repeat;
+    background-size:cover; }
+}
