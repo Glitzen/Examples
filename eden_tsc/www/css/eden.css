@@ -199,7 +199,7 @@ div .absolute .language:focus {
 #main3{
     background-color:#181649;
     /*background: url(../css/1_1920.jpg) no-repeat center fixed;*/
-    background: url(../content/services_1920.jpg) no-repeat center fixed;
+    background: url(../content/contacts_1920.jpg) no-repeat center fixed;
     height:100%;
     width:100%;
     padding:0;
@@ -228,7 +228,7 @@ div .absolute .language:focus {
 #main1 {
     background-color:#614350;
     /*background: url(../css/3_1920.jpg) no-repeat center fixed;*/
-    background: url(../content/contacts_1920.jpg) no-repeat center fixed;
+    background: url(../content/services_1920.jpg) no-repeat center fixed;
     height:100%;
     width:100%;
     padding:0;
