@@ -438,7 +438,7 @@ ul .but a:focus {
     }
 }
 
-@media only screen and (min-width:1920px) and (min-height:1200) {
+@media only screen and (min-width:1920px) and (min-height:1200px) {
  #main0 {
     background: url(../content/company_1920.jpg) no-repeat;
      background-size:cover; 
