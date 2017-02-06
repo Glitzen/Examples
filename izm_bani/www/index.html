@@ -11,7 +11,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--*<link href="css/w3.css" rel="stylesheet">-->
+    <link href="css/main_template.css" rel="stylesheet">
     <link href="css/bani.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,39 +25,195 @@
   </head>
   <body>
 	<div class="block__header">
-  		<div class="header_logo"></div>
-  		<div class="header_text"></div>
+  		<div class="header__content">
+        <div class="header__content_text">
+        <h1>+7(499) 165-9854</h1>
+        <p>пн. 14:00 - 22:00
+        <br>
+        вт.-вс. 08:00 - 22:00</p>  
+      </div>
+      </div>
+  		
 	</div>
 
-	<div class="block__menubar"></div>
+	<div class="block__menubar">
+               <ul class="nav navbar-nav">
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="razryadi.html">Разряды</a></li>
+                <li><a href="sauna.html">Сауна</a></li>
+                <li><a href="salon.html">Салон красоты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="partners.html">Наши партнеры</a></li>
+                
+                <li><a href="contacts.html">Контакты</a></li>
+                
+              </ul>
+  </div>
 
-	<div class="block__slider"></div>
+  <div class="block__content">
+    <div class="slider__block">
+      <div class="slider__carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="topslider_image topslider_image-1"><!--<img src="ny.jpg" alt="">-->
+                </div>
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
+                </div> 
+              </div>
+          
+              <div class="item">
+                <div class="topslider_image topslider_image-2"><!--<img src="ny.jpg" alt="">-->
+                </div>
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
+                </div> 
+              </div>
+          
+              <div class="item">
+                <div class="topslider_image topslider_image-3"><!--<img src="ny.jpg" alt="">-->
+                </div>
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
+                </div> 
+              </div>
 
-  	<div class="block__video">
-  		<div class="video_player"></div>
-  		<div class="video_text"></div>
-  	</div>
+              <div class="item">
+                <div class="topslider_image topslider_image-4"><!--<img src="ny.jpg" alt="">-->
+                </div>
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
+                </div> 
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="slider__controlbar">     
+        </div>
+        
 
-  	<div class="block__action">
-  		<div class="action__item1"></div>
-  		<div class="action__item2"></div>
-  		<div class="action__item3"></div>
-  	</div>
+    </div>
+    <div class="video__block_header">
+      <h1>О нас</h1>
+    </div>
+    <div class="video__block">
+    
+    <div class="containerMain content_position row clearfix">
+      <div class="video__block_player col-md-6">
+        <iframe width="470" height="315" src="https://www.youtube.com/embed/RtXWy8S3y0o" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video__block_text col-md-6">
+        <p> В России баня-предмет национальной гордости.<br>
+Здесь нет суеты, все чинно и степенно. Врачи рекомендуют ее вместо 
+лекарств и операций, россияне применяют как средство "от всего", иностранцы
+уважают, ибо слава о добрых традициях русской парилки давно перешагнула 
+рубеж нашей родины.<br>
+ К тому же русская баня-это отличный способ проведения досуга. Здесь можно отметить
+день рождения, Новый год, всевозможные праздники или просто отдохнуть с друзьями.</p>
+      </div>
+      </div>
+
+      
+
+    </div>
+    <div class="video__block_text2 content_position clearfix">
+    <p>Измайловские бани с 1953 года являются одним из излюбленных мест отдыха измайловцев.
+Сегодня это современный круглосуточно работающий оздоровительный комплекс, располо-
+женный в прекрасном классическом здании с колоннами, барельефами и мозаичными панно
+со сценами из московской истории. Мы свято чтим русские банные традиции, давая по-
+сетителям возможность оценить наш целебный "легкий пар", наполненный ароматами
+русского леса, хвои, меда и здоровьем. К услугам клиентов бары с широким выбором 
+прохладительных напитков, травяных чаев, соков. Комплекс предлагает своим гостям также
+посетить финскую сауну, которая оснащена бассейном с подогревом и комнатой отдыха с гостиной.
+ Массаж после парилки куда более эффективен, чем сделанный "насухую". Наши специалисты 
+предложат посетителям разные виды массажа, после которого даже самое уставшее тело
+получит заряд бодрости и целительной силы. У нас открыты косметический салон, 
+парикмахерская, маникюрно-педикюрный кабинет, солярий.<br>
+ Измайловские бани всегда радовали посетителей своим гостеприимством, чистотой и 
+высоким уровнем обслуживания, оставаясь в стоимостном выражении при этом ниже 
+среднего по городу Москве.<br>
+Будем рады видеть Вас в числе наших постоянных клиентов!
+ </p>
+ </div>
+    <div class="anons__block">
+      <div class="anons__block_header">
+       
+      </div>
+      <div class="anons__block_picframe1">
+       
+      </div>
+
+      <div class="anons__block_picframe2">
+       
+      </div>
+    </div>
+    <div class="actions__block clearfix">
+    <div class="content_position">
+      <div class="actions__block_item1 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_01.jpg">
+      </div>
+      <div class="actions__block_item2 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_02.jpg">
+      </div>
+      <div class="actions__block_item3 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_03.jpg">
+      </div>
+      <div class="actions__block_item4 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_04.jpg">
+      </div>
+      </div>
+    </div>
+  </div>
+
+
 
 	<div class="block__footer">
-  		<div class="footer__info">
-  			<div class="footer__info_text"></div>
-  			<div class="footer__info_socials"></div>
+  		<div class="footer__info clearfix">
+  			<div class="footer__info_text">
+          <h1>Измайловские бани</h1>
+          <p>Адрес: г. Москва, ул. 6-я Парковая, д. 21</p>   
+        </div>
+  			<div class="footer__info_phone">
+          <p>+7(499) 165-9854</p>   
+        </div>
   		</div>
-  		<div class="footer__copyright"></div>
+  		<div class="footer__socials">
+        <a href="http://vk.com/"><span class="fa fa-vk"></span></a> <a href="https://www.facebook.com/"><span class="fa fa-facebook-official"></span></a> <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
+      </div>
 	</div>
 
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Compiled plugins -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

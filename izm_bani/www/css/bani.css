@@ -1,72 +1,359 @@
-/* Let's start */
-.body {
+/* Content Definitions and Adjustments */
+
+
+	.content_position {
+		max-width:1000px;
+		padding:30px;
+		margin:auto;
+	}
+
+
+/*О нас*/
+
+.slider__block {
 
 }
 
-.block__header {
+
+	.topslider_image {
+          width: 100%;
+          margin: auto;
+          height: 500px;
+          
+        }
+
+        .topslider_image-1 {
+          background: url("../content/slider1.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-2 {
+          background: url("../content/slider2.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-3 {
+          background: url("../content/slider3.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .topslider_image-4 {
+          background: url("../content/slider4.jpg") no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+
+        .slider__carousel{
+          width:100%;
+          padding:0;
+          margin:0;
+        }
+
+        .slider__controlbar {
+          position:relative;
+          width:100%;
+          height:50px;
+        }
+        #myCarousel .carousel-inner img {
+          -webkit-filter: grayscale(90%);
+          filter: grayscale(90%); /* make all photos black and white */ 
+          width: 100%; /* Set width to 100% */
+          margin: auto;
+          height:500px;
+        }
+        
+        #myCarousel .carousel-caption h3 {
+          color: #fff !important;
+        }
+        
+        #myCarousel ol.carousel-indicators {
+          bottom:-50px !important;
+          list-style: square initial initial;
+        }
+
+        #myCarousel ol.carousel-indicators li {
+          border-radius:0;
+          width:15px;
+          height:15px;
+          border: 1px solid white;
+          color:transparent;
+        }
+
+        #myCarousel .carousel-indicators .active {
+          background-color:#fff;
+          margin:0 0 1px 0 !important; 
+          
+        }
+
+        #myCarousel .carousel-indicators li:hover {
+          background-color:#777;
+          
+        }
+
+        @media (max-width: 600px) {
+          #myCarousel .carousel-caption {
+            display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+          }      
+        }
+/*
+.video__block_header {
+	background-color:#fff;
+	color:#333;
+}*/
+
+.video__block {
+background-color:#777;
+}	
+	.video__block_header{
+text-align:center;
+	}
+	.containerMain {
+
+	}
+
+	.video__block_player {
+	
+	}
+
+	.video__block_text {
+
+	}
+		.video__block_text p {
+	padding:30px;
+	}
+
+
+.anons__block {
 
 }
 
-	.header_logo {
-	
-	}	
-	  		
-	.header_text {
-	
-	}
-  			
-.block__menubar {
 
+	.anons__block_header {
+
+	}
+
+	.anons__block_picframe1 {
+
+	}
+
+	.anons__block_picframe2 {
+
+	}
+
+
+.actions__block {
+background-color:#fff;
+padding:50px;
 }
-
-.block__slider {
-
+.actions__block img {
+max-width:200px;
+max-height:125px;
 }
-
-.block__video {
-
-}
-
-	.video_player {
+	.actions__block_item1 {
 	
 	}
 
-	.video_text {
+	.actions__block_item2 {
 	
 	}
 
-.block__action {
-
-}
-
-	.action__item1 {
+	.actions__block_item3 {
 	
 	}
 
-	.action__item2 {
+	.actions__block_item4 {
 	
 	}
 
-	.action__item3 {
-	
-	}
+/* image floating */
   	
-.block__footer {
-
+.leftimg {
+float:left; 
+margin: 0px 20px 20px 0; 
 }
 
-	.footer__info {
-	
+.rightimg {
+float:right;
+ margin: 0px 0px 20px 20px;
+}
+
+/* Разряды */
+
+.content__razryadi {
+background-color:#fff;
+}	
+	.content__razryadi img {
+		width:500px;
 	}
 
-		.footer__info_text {
-		
-		}
 
-		.footer__info_socials {
-		
-		}
-	  		
-	.footer__copyright {
-	
+
+	.razryadi__header {
+		color:#333;
+		text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
 	}
+
+	.razryadi__block1 {
+	background-color:#5e5e5e;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+		
+
+	.razryadi__block2 {
+		color:#333;
+		padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.razryadi__block3 {
+		background-color:#5e5e5e;
+		padding-top:20px;
+	padding-bottom:20px;
+		height:200px;
+	}
+
+/* Сауна */
+
+.content__sauna {
+background-color:#fff;
+}	
+	.content__sauna img {
+		width:500px;
+	}
+
+
+
+	.sauna__header {
+		color:#333;
+		text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.sauna__block1 {
+	background-color:#777;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.sauna__block2 {
+		color:#333;
+		background-color:#fff;
+		padding-top:20px;
+	padding-bottom:20px;
+		height:200px;
+	}
+
+/*Салон красоты*/
+
+.content__salon {
+background-color:#fff;
+}	
+	.content__salon img {
+		width:500px;
+	}
+
+
+
+	.salon__header {
+		color:#333;
+		text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.salon__block1 {
+	background-color:#777;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.salon__block2 {
+		color:#333;
+		background-color:#fff;
+		padding-top:20px;
+	padding-bottom:20px;
+		height:200px;
+	}
+
+/*Галерея*/
+.gallery__block {
+	padding-top:30px;
+	padding-bottom:30px;
+	background-color:#fff;
+}
+
+.gallery__block h1 {
+	text-align:center;
+	color:#333;
+	padding-bottom:30px;
+}
+
+.gallery__block img{
+width:220px;
+height:125px;
+}
+
+/*Наши партнеры*/
+
+.content__partners {
+background-color:#fff;
+}	
+	.content__partners img {
+		width:500px;
+	}
+
+	.content__partners a {
+		color:#fff;
+	}
+
+	.partners__header {
+		color:#333;
+		text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.partners__block1 {
+	background-color:#777;
+	padding-top:20px;
+	padding-bottom:40px;
+	}
+
+	.partners__block2 {
+		color:#333;
+		background-color:#fff;
+		padding-top:20px;
+	padding-bottom:20px;
+		
+	}
+
+/*Цены*/
+
+/*Новости*/
+
+/*Контакты*/
+.contacts__block {
+	text-align:center;
+}
+
+    .mainframe__map {
+    } 
+        .map__content {
+
+        }
+        
+        #googleMap {
+          width: 100%;
+          height: 500px;
+
+      }
+
+/*Кухня*/
