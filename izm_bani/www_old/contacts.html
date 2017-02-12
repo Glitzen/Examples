@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Измайловские Бани</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--*<link href="css/w3.css" rel="stylesheet">-->
+    <link href="css/main_template.css" rel="stylesheet">
+    <link href="css/bani.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="block__header">
+  		<div class="header__content">
+        <div class="header__content_text">
+        <h1>+7(499) 165-9854</h1>
+        <p>пн. 14:00 - 22:00
+        <br>
+        вт.-вс. 08:00 - 22:00</p>  
+      </div>
+      </div>
+  		
+	</div>
+
+	<div class="block__menubar">
+               <ul class="nav navbar-nav">
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="razryadi.html">Разряды</a></li>
+                <li><a href="sauna.html">Сауна</a></li>
+                <li><a href="salon.html">Салон красоты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="partners.html">Наши партнеры</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+  </div>
+
+  <div class="block__content">
+  <div class="content_position">
+  <div class="contacts__block">
+    <h3>
+
+<span class="glyphicon glyphicon-map-marker"></span> Москва 6-я Парковая улица, дом 21<br><br><br>
+Ближайшее метро: Первомайская, Щелковская, Измайловская, Черкизовская<br><br><br>
+                <span class="glyphicon glyphicon-phone"></span>+7(965)618-09-30<br>
+                <span class="glyphicon glyphicon-phone"></span>+7(965)230-26-13<br>
+                <span class="glyphicon glyphicon-phone"></span>+7(926)979-19-81<br>
+                <span class="glyphicon glyphicon-phone"></span>+7(499)367-59-28
+
+</h3>
+</div>
+
+</div> 
+ </div> 
+<div class="mainframe__map container-fluid" id="map">
+          <div class="map__content map__content_position">
+          <div id="googleMap"></div>
+
+            <!-- Add Google Maps -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6byymfkjmYzeSGOX5z_G6ywbOSoCfUtQ&callback=initMap"></script>
+            <script>
+            var myCenter = new google.maps.LatLng(55.792500, 37.790412);
+            
+            function initialize() {
+            var mapProp = {
+            center:myCenter,
+            zoom:14,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
+            var marker = new google.maps.Marker({
+            position:myCenter,
+            });
+            
+            marker.setMap(map);
+            }
+            
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+          </div>
+        </div>
+
+
+
+	<div class="block__footer">
+  		<div class="footer__info clearfix">
+  			<div class="footer__info_text">
+          <h1>Измайловские бани</h1>
+          <p>Адрес: г. Москва, ул. 6-я Парковая, д. 21</p>   
+        </div>
+  			<div class="footer__info_phone">
+          <p>+7(499) 165-9854</p>   
+        </div>
+  		</div>
+  		<div class="footer__socials">
+        <a href="http://vk.com/"><span class="fa fa-vk"></span></a> <a href="https://www.facebook.com/"><span class="fa fa-facebook-official"></span></a> <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
+      </div>
+	</div>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Compiled plugins -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
