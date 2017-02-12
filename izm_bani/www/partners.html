@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -14,7 +15,10 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--*<link href="css/w3.css" rel="stylesheet">-->
     <link href="css/main_template.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="css/bani.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,71 +28,191 @@
     <![endif]-->
   </head>
   <body>
-	<div class="block__header">
-  		<div class="header__content">
-        <div class="header__content_text">
+  <div class="block__header">
+      <div class="header__content">
+      <div class="header__content_logo"><img src="./content/logo_3.png" alt="" class="logo_pic"></div>
+        <div class="header__content_text hidden-xs">
         <h1>+7(499) 165-9854</h1>
         <p>пн. 14:00 - 22:00
         <br>
-        вт.-вс. 08:00 - 22:00</p>  
+        вт.-вс. 08:00 - 22:00</p> 
+        
+        
       </div>
-      </div>
-  		
-	</div>
 
-	<div class="block__menubar">
-               <ul class="nav navbar-nav">
+      </div>
+      
+  </div>
+
+  <div class="block__menubar">
+              <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="210">
+         <!-- <div class="container">-->
+            <div class="navbar-header">
+              <a class="navbar-brand visible-xs" href="#top">Измайловские Бани</a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
                 <li><a href="index.html">О нас</a></li>
                 <li><a href="razryadi.html">Разряды</a></li>
                 <li><a href="sauna.html">Сауна</a></li>
                 <li><a href="salon.html">Салон красоты</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="partners.html">Наши партнеры</a></li>
-                
+
+                <!--<li><a href="prices.html">Цены</a></li>-->
+                <li><a href="news.html">Новости</a></li>
+
                 <li><a href="contacts.html">Контакты</a></li>
-               
+                
+                <li><a href="food.html">Кухня</a></li>
               </ul>
+            </div>
+         <!-- </div>-->
+        </nav>
+      
   </div>
 
   <div class="block__content">
-    <div class="content__partners">
-       <div class="partners__header">
-          <h1>Наши партнеры</h1>
-        </div>
-       <div class="partners__block1 clearfix">
-        <div class="content_position">
+        
+    <div class="first__block">
+    
+    <div class="containerMain content_position row clearfix">
+    <div class="col-xs-12 visible-xs first__block_text">
         <h2>Стоматология</h2>
-        <p><img class="leftimg" src="./content/galleries/pages/partners/stomatologia/0007.jpg" alt="стоматология"> Стоматология "ЭСТЕТИКС"<br>
-<a href="http://estetikx.ru/">http://estetikx.ru/</a>
-          </p>
-          </div>
-       </div>
-       <div class="partners__block2 clearfix">
-        <div class="content_position">
-        <h2>Тайский массаж</h2>
-        <p><img class="rightimg" src="./content/galleries/pages/partners/thai/0012.jpg" alt="russkiy stil">Тайский массаж "Вай Тай"<br>
-<a href="http://www.waithaispa.ru/">http://www.waithaispa.ru/</a>
-          </p>
-          </div>
-       </div>
-       
-     </div>
-  </div>	
+        <p>
+<strong> Стоматология "ЭСТЕТИКС"</strong><br>
+<strong><a href="http://estetikx.ru/">http://estetikx.ru/</a></strong>
 
-	<div class="block__footer">
-  		<div class="footer__info clearfix">
-  			<div class="footer__info_text">
+        
+
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-7 first__block_media">
+        <img class="first_media" src="./content/galleries/pages/partners/stomatologia/0007.jpg" alt="Стоматология">
+      </div>
+
+      <div class="col-xs-12 hidden-xs col-sm-5 first__block_text">
+        <h2>Стоматология</h2>
+        <p>
+<strong> Стоматология "ЭСТЕТИКС"</strong><br>
+<strong><a href="http://estetikx.ru/">http://estetikx.ru/</a></strong>
+
+        
+
+        </p>
+      </div>
+      </div>
+
+      
+
+     </div>
+     
+         <div class="first__block-2">
+    
+    <div class="containerMain content_position row clearfix">
+      
+      <div class="col-xs-12 col-sm-5 first__block_text">
+        <h2>Тайский массаж</h2>
+        <p>
+                <strong>Тайский массаж "Вай Тай"</strong><br>
+<strong><a href="http://www.waithaispa.ru/">http://www.waithaispa.ru/</a></strong>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-7 first__block_media">
+        <img class="first_media" src="./content/galleries/pages/partners/thai/0012.jpg" alt="Тайский массаж">
+      </div>
+      </div>
+     </div>
+     <div class="row second__block">
+      <div class="second__block_picframe content_position">
+       <div class="row picframe">
+            <a href="./content/galleries/pages/partners/stomatologia/0001.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/stomatologia/0001.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/stomatologia/0009.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/stomatologia/0009.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/stomatologia/0005.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/stomatologia/0005.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/stomatologia/0008.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/stomatologia/0008.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="row picframe">
+            <a href="./content/galleries/pages/partners/thai/0001.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/thai/0001.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/thai/0006.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/thai/0005.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/thai/0010.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/thai/0010.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/partners/thai/0020.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/partners/thai/0020.jpg" class="img-fluid">
+            </a>
+        </div>
+      </div>
+
+  </div>
+ <!-- <div class="row second__block">
+      <div class="second__block_picframe content_position">
+       <div class="row picframe">
+            <a href="./content/slider2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-12 col-sm-4">
+                <img src="./content/slider2.jpg" class="img-fluid">
+            </a>
+            <a href="./content/slider2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-12 col-sm-4">
+                <img src="./content/slider2.jpg" class="img-fluid">
+            </a>
+            <a href="./content/slider2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-12 col-sm-4">
+                <img src="./content/slider2.jpg" class="img-fluid">
+            </a>
+        </div>
+      </div>
+
+  </div>-->
+<!--    <div class="actions__block clearfix">
+    <div class="content_position">
+      <div class="actions__block_item1 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_01.jpg">
+      </div>
+      <div class="actions__block_item2 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_02.jpg">
+      </div>
+      <div class="actions__block_item3 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_03.jpg">
+      </div>
+      <div class="actions__block_item4 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_04.jpg">
+      </div>
+      </div>
+    </div>-->
+  </div>
+
+
+
+  <div class="block__footer">
+      <div class="footer__info clearfix">
+        <div class="footer__info_text">
           <h1>Измайловские бани</h1>
           <p>Адрес: г. Москва, ул. 6-я Парковая, д. 21</p>   
         </div>
-  			<div class="footer__info_phone">
+        <div class="footer__info_phone">
           <p>+7(499) 165-9854</p>   
         </div>
-  		</div>
-  		<div class="footer__socials">
+      </div>
+      <div class="footer__socials">
         <a href="http://vk.com/"><span class="fa fa-vk"></span></a> <a href="https://www.facebook.com/"><span class="fa fa-facebook-official"></span></a> <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
       </div>
-	</div>
+  </div>
+
 
 
 
@@ -98,5 +222,11 @@
     <script src="js/jquery.min.js"></script>
     <!-- Compiled plugins -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+        <script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});</script>
   </body>
 </html>

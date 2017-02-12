@@ -12,10 +12,12 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    
     <!--*<link href="css/w3.css" rel="stylesheet">-->
     <link href="css/main_template.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="css/bani.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,62 +27,99 @@
     <![endif]-->
   </head>
   <body>
-	<div class="block__header">
-  		<div class="header__content">
-        <div class="header__content_text">
+  <div class="block__header">
+      <div class="header__content">
+      <div class="header__content_logo"><img src="./content/logo_3.png" alt="" class="logo_pic"></div>
+        <div class="header__content_text hidden-xs">
         <h1>+7(499) 165-9854</h1>
         <p>пн. 14:00 - 22:00
         <br>
-        вт.-вс. 08:00 - 22:00</p>  
+        вт.-вс. 08:00 - 22:00</p> 
+        
+        
       </div>
-      </div>
-  		
-	</div>
 
-	<div class="block__menubar">
-               <ul class="nav navbar-nav">
+      </div>
+      
+  </div>
+
+  <div class="block__menubar">
+              <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="210">
+         <!-- <div class="container">-->
+            <div class="navbar-header">
+              <a class="navbar-brand visible-xs" href="#top">Измайловские Бани</a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
                 <li><a href="index.html">О нас</a></li>
                 <li><a href="razryadi.html">Разряды</a></li>
                 <li><a href="sauna.html">Сауна</a></li>
                 <li><a href="salon.html">Салон красоты</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="partners.html">Наши партнеры</a></li>
-               
+
+                <!--<li><a href="prices.html">Цены</a></li>-->
+                <li><a href="news.html">Новости</a></li>
+
                 <li><a href="contacts.html">Контакты</a></li>
-             
+                
+                <li><a href="food.html">Кухня</a></li>
               </ul>
+            </div>
+         <!-- </div>-->
+        </nav>
+      
   </div>
 
   <div class="block__content">
-    <div class="content__razryadi">
-       <div class="razryadi__header">
-          <h1>Разряды</h1>
-        </div>
-       <div class="razryadi__block1 clearfix">
-        <div class="content_position">
+        
+    <div class="first__block">
+    
+    <div class="containerMain content_position row clearfix">
+      <div class="col-xs-12 col-sm-7 first__block_media">
+        <img class="first_media" src="./content/galleries/pages/razryadi/zal_kaminniy.jpg" alt="kaminniy zal">
+      </div>
+
+      <div class="col-xs-12 col-sm-5 first__block_text">
         <h2>Каминный зал</h2>
-        <p><img class="leftimg" src="./content/galleries/pages/razryadi/zal_kaminniy.jpg" alt="kaminniy zal">
-          21 место<br>
+        <p>
+          <strong>21 место</strong><br>
           Продолжительность сеанса 2 часа<br>
-          Зал на 10 мест 800 руб.<br>
-          Кабина на 5 мест 810 руб.<br>
-          Кабина на 6 мест 820<br>
-          Инвалиды 1 гр., дети до 7 лет бесплатно<br>
-          Дети от 7 до 12 лет 400 руб.<br>
-          Инвалиды 2-3 гр., участники ВОВ, пенсионеры 400 руб.</p>
-          </div>
-       </div>
-       <div class="razryadi__block2 clearfix">
-        <div class="content_position">
+          Зал на 10 мест <strong>800 руб.</strong><br>
+          Кабина на 5 мест <strong>810 руб.</strong><br>
+          Кабина на 6 мест <strong>820 руб.</strong><br>
+          Инвалиды 1 гр., дети до 7 лет <strong>бесплатно</strong><br>
+          Дети от 7 до 12 лет <strong>400 руб.</strong><br>
+          Инвалиды 2-3 гр., участники ВОВ, пенсионеры <strong>400 руб.</strong>
+
+        </p>
+      </div>
+      </div>
+
+      
+
+     </div>
+     
+         <div class="first__block-2">
+    
+    <div class="containerMain content_position row clearfix">
+      
+      <div class="col-xs-12 col-sm-5 first__block_text">
         <h2>Русский стиль</h2>
-        <p><img class="rightimg" src="./content/galleries/pages/razryadi/zal_russkiystil.jpg" alt="russkiy stil">
-          36 мест<br>
+        <p>
+          <strong>36 мест</strong><br>
           Продолжительность сеанса 2 часа!<br>
           <br>
           Женские дни:<br>
           -среда<br>
           -пятница<br>
-          стоимость: 800 руб/чел.<br>
+          стоимость: <strong>800 руб/чел.</strong><br>
           <br>
           Мужские дни:<br>
           - понедельник (с 14:00)<br>
@@ -88,7 +127,7 @@
           - четверг<br>
           - суббота<br>
           - воскресенье<br>
-          стоимость: 800 руб/чел.<br>
+          стоимость: <strong>800 руб/чел</strong>.<br>
           <br>
           Пенсионеры, участники ВОВ, инвалиды второй и третей групп:<br>
           с 08:00 до 14:00<br>
@@ -96,36 +135,86 @@
           - среда<br>
           - четверг<br>
           - пятница<br>
-          стоимость: 400 руб/чел.<br>
+          стоимость: <strong>400 руб/чел.</strong><br>
           <br>
-          Дети от 7 до 12 лет 400 руб/чел.<br>
+          Дети от 7 до 12 лет <strong>400 руб/чел.</strong><br>
           <br>
-          Детям до 7 лет и инвалидам первой группы посещение бесплатно.</p>
-          </div>
-       </div>
-       <div class="razryadi__block3">
-        <div class="razryadi__gallery">
-          
-        </div>
-       </div>
+          Детям до 7 лет и инвалидам первой группы посещение <strong>бесплатно.</strong>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-7 first__block_media">
+        <img class="first_media" src="./content/galleries/pages/razryadi/zal_russkiystil.jpg" alt="russkiy stil">
+      </div>
+      </div>
      </div>
-    
-  </div>	
+  <div class="row second__block">
+      <div class="second__block_picframe content_position">
+       <div class="row picframe">
+            <a href="./content/galleries/pages/razryadi/0001.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0001.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0003.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0003.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0004.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0004.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0005.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0005.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="row picframe">
+            <a href="./content/galleries/pages/razryadi/0008.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0008.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0011.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0011.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0012.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0012.jpg" class="img-fluid">
+            </a>
+            <a href="./content/galleries/pages/razryadi/0015.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-xs-6 col-sm-3">
+                <img src="./content/galleries/pages/razryadi/0015.jpg" class="img-fluid">
+            </a>
+        </div>
+      </div>
 
-	<div class="block__footer">
-  		<div class="footer__info clearfix">
-  			<div class="footer__info_text">
+  </div>
+<!--    <div class="actions__block clearfix">
+    <div class="content_position">
+      <div class="actions__block_item1 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_01.jpg">
+      </div>
+      <div class="actions__block_item2 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_02.jpg">
+      </div>
+      <div class="actions__block_item3 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_03.jpg">
+      </div>
+      <div class="actions__block_item4 col-sm-3">
+        <img src="./content/galleries/main/Actions/act_04.jpg">
+      </div>
+      </div>
+    </div>-->
+  </div>
+
+
+
+  <div class="block__footer">
+      <div class="footer__info clearfix">
+        <div class="footer__info_text">
           <h1>Измайловские бани</h1>
           <p>Адрес: г. Москва, ул. 6-я Парковая, д. 21</p>   
         </div>
-  			<div class="footer__info_phone">
+        <div class="footer__info_phone">
           <p>+7(499) 165-9854</p>   
         </div>
-  		</div>
-  		<div class="footer__socials">
+      </div>
+      <div class="footer__socials">
         <a href="http://vk.com/"><span class="fa fa-vk"></span></a> <a href="https://www.facebook.com/"><span class="fa fa-facebook-official"></span></a> <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
       </div>
-	</div>
+  </div>
+
 
 
 
@@ -135,5 +224,11 @@
     <script src="js/jquery.min.js"></script>
     <!-- Compiled plugins -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+        <script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});</script>
   </body>
 </html>
