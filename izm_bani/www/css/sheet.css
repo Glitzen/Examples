@@ -1,0 +1,179 @@
+
+.grid-container {
+	text-align:center;
+}
+
+.ritz .waffle {
+	display:inline-block;
+	background-color:#777;
+	padding-bottom:30px;
+
+
+}
+
+.ritz .waffle a { color: inherit; 
+}
+
+
+
+
+.ritz .waffle .s0, .ritz .waffle .s1, .ritz .waffle .s2, .ritz .waffle .s3, .ritz .waffle .s4, .ritz .waffle .s5 {
+	background-color:#777;
+	
+	/*font-weight:bold;
+	color:#462512;
+	font-family:'Times New Roman';
+	font-size:16pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;*/
+	padding:10px 20px 10px 20px;
+}
+
+.ritz .waffle th {
+	display:none;
+}
+.ritz .waffle .s0-r {
+	background-color:#660c0c;
+	text-align:center;
+	/*font-weight:bold;
+	color:#462512;
+	font-family:'Times New Roman';*/
+
+	font-size:16pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 15px 0px 15px;*/
+}
+
+.ritz .waffle .s0{
+	text-align:center;
+	/*font-weight:bold;
+	color:#462512;
+	font-family:'Times New Roman';*/
+	/*background-color:#660c0c;*/
+	font-size:16pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 15px 0px 15px;*/}
+.ritz .waffle .s1{
+	text-align:center;
+	font-weight:bold;
+	/*color:#0f243e;
+	font-family:'Times New Roman';*/
+	font-size:18pt;
+	vertical-align:bottom;
+	white-space:nowrap;
+	direction:ltr;
+	padding-top:15px;
+	/*padding:0px 3px 0px 3px;*/}
+.ritz .waffle .s2{
+	text-align:left;
+	/*font-weight:bold;
+	color:#37200f;
+	font-family:'Times New Roman';*/
+	font-size:14pt;vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 3px 0px 3px;*/}
+.ritz .waffle .s3{
+	text-align:center;
+	/*font-weight:bold;
+	color:#37200f;
+	font-family:'Times New Roman';*/
+	font-size:16pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 3px 0px 3px;*/}
+.ritz .waffle .s4{
+	text-align:left;
+	/*font-weight:bold;
+	color:#311a0d;
+	font-family:'Times New Roman';*/
+	font-size:14pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 3px 0px 3px;*/}
+.ritz .waffle .s5{
+	text-align:center;
+	/*font-weight:bold;
+	color:#311a0d;
+	font-family:'Times New Roman';*/
+	font-size:16pt;
+	vertical-align:middle;
+	white-space:normal;
+	overflow:hidden;
+	word-wrap:break-word;
+	direction:ltr;
+	/*padding:0px 3px 0px 3px;*/}
+
+
+
+
+	/* tabs */
+
+
+	.prices__pricebox {
+    
+        }
+       
+
+        .prices__pricebox_nav{
+          border-bottom-color:transparent;
+          padding-bottom:15px;
+        }
+
+		.prices__pricebox_nav li{
+			float:none !important;
+			display:inline-block;
+			padding-bottom:5px;
+		}
+
+        .prices__pricebox_nav li.active a,
+        .prices__pricebox_nav li.active a:focus,
+        .prices__pricebox_nav li.active a:hover {
+          background-color: #990000;
+          border-top-color:#660c0c;
+          border-left-color:#660c0c;
+          border-right-color:#660c0c;
+          color: #fff;
+        }  
+        .prices__pricebox_nav li a{
+          background-color: #660c0c;
+          color: #fff;
+          font-size:14px;
+          font-weight: bold;
+          border-bottom: 1px solid #660c0c;
+        }  
+        .prices__pricebox_nav li a:hover {
+          background-color:#770000;
+          color: #fff;
+          font-weight: bold;
+          border-color: #660c0c;
+          border-bottom: 1px solid #990000;
+        }
+
+
+        /*.prices__pricebox_content {
+       border: 1px solid #4b819b;
+    border-top:transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #dce3e7;
+    }*/
