@@ -99,7 +99,10 @@ body {
         }
 
 .topframe {
-  background-color: #555;
+  background-image: url(../content/circuit_230_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #21475e;
 }
     .topframe__shield{
       height: 130px;
@@ -110,13 +113,20 @@ body {
       z-index: 9000;
     }
     .topframe__gap {
-      height: 50px;
-      background-color: #21475e;
+      text-align:center;
+      height: 150px;
+     /* background-color: #21475e;*/
     }
-
+.topframe__gap h1 {
+      color:#fff;
+      margin:0;
+      position:relative;
+      top:50px;
+    }
     .topframe__menu {
+      text-align:center;
       height: 80px;
-      background-color: #21475e;
+      /*background-color: #21475e;*/
     }
 
         .affix {
@@ -145,8 +155,10 @@ body {
         
         .navbar-nav {
           /*width:750px;*/
-          margin:auto;
-          float: right !important;
+          float: none !important;
+    margin: auto !important;
+    display: inline-block;
+    max-width:100%;
         }
 
         .navbar li a, .navbar .navbar-brand {
@@ -170,6 +182,9 @@ background-color: #406f8a !important;
         .navbar-default .navbar-toggle {
           border-color: #fff;
           color: #fff !important;
+        }
+        .navbar-toggle{
+          float:none;
         }
 
     .topframe__slider {}
@@ -198,6 +213,7 @@ background-color: #406f8a !important;
     .mainframe__himchistka {
       background-color: #aec5d0;
       margin-bottom:0px;
+          background-image: url(../content/wall_b.png);
     }
         .himchistka__content {
           text-align: center;
@@ -334,10 +350,17 @@ text-decoration: underline;
     .mainframe_tonirovka {
       margin-bottom:0px;
       background-color: #eee;
+          background-image: url(../content/glass_b.jpg);
     }
         .tonirovka__content {
        text-align:center;
         }
+.tonirovka__content h2 {
+         color:#dce3e7;
+       }
+
+.tonirovka__content p {
+       color: #dce3e7;}
 
         .tonirovka__cardline {
           width:100%;
@@ -395,6 +418,9 @@ box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
             margin-bottom: 5px;
           }
 
+.tonirovka__pricebox h4 {
+  color: #dce3e7;
+}
           .tonirovka__pricebox .glyphicon-chevron-down {
             position:absolute;
             right:20px;
@@ -491,12 +517,15 @@ color: #aec5d0;
     .mainframe_elektrika {
       margin-bottom:0px;
       background-color: #dce3e7;
+          background-image: url(../content/lines_b.png);
     }
         .elektrika__content {
           text-align:center;
         }
         .elektrika__content h2 {
           margin-bottom: 50px;
+           color: #dce3e7;
+
         }
         .elektrika__content_row-2 {
           max-width: 65%;
@@ -514,6 +543,7 @@ color: #aec5d0;
       margin-bottom:0px;
       background-color: #aec5d0;
       /* box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); */
+      background-image: url(../content/dots_b.jpg);
     }
         .gallery__content {
           padding: 10px 30px 30px 30px;
@@ -524,6 +554,8 @@ color: #aec5d0;
           margin:0 0 20px 0;
           
         }
+.gallery__content h2 {
+         color: #dce3e7;}
 
         .modal-dialog {
           margin-top:70px;  
