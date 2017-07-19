@@ -7,76 +7,124 @@ html, body {
 
 main {
 background-color: #008081;
+background-image: url(../content/prosto_fon.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
 width:100%;
 height:100%;
 }
+
+.box_3px {
+	border-top: 3px solid #eee;
+    border-left: 3px solid #fefefe;
+    border-right: 3px solid #333;
+    border-bottom: 2px solid #333;
+    border-radius: 0;
+}
+.box_2px, .nav_dropright_menu, .nav_dropright_menu-level2, article, aside {
+	border-top: 2px solid #eee;
+    border-left: 2px solid #fefefe;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    border-radius: 0;
+}
+.box_1px {
+	border-top: 1px solid #eee;
+    border-left: 1px solid #fefefe;
+    border-right: 1px solid #555;
+    border-bottom: 1px solid #555;
+    border-radius: 0;
+}
+
 
 	section {
 		height:100%;
 		width: 80%;
 		margin: auto;
 		height: 100%;
-		background-color: cyan;
+		/*background-color: cyan;*/
+
+		
 		
 	}
 
 		header {
-			background-color: blue;
+			background-color: #00007f;
 			position: relative;
 			top:0;
 		}
 			header > button {
 				position: absolute;
-				right: 0;
-				top: 0;
+				right: 4px;
+				top: 4px;
 				height:20px;
 				width:20px;
 				background-color:#999;
-				border: 2px solid #777;
-
+				border-top: 1px solid #eee;
+    			border-left: 1px solid #fefefe;
+    			border-right: 1px solid #555;
+    			border-bottom: 1px solid #555;
+    			border-radius: 0;
 			}
+				header > button > span {
+					position: absolute;
+    				top: -13px;
+    				font-size: 32px;
+    				left: 0;
+    				color: #000;
+				}
 
 		h1 {
-			color: #fff;
+			color: #eee;
 			margin:0;
-			font-size:30px;
-			padding-left: 10px;
+			font-size:26px;
+			padding: 2px 2px 2px 10px;
 		}
 
 		article {
 			display:none;
 			width: 50%;
-			height: 30%;
+			height: 50%;
 			margin:auto;
-			background-color:#aaa;
+			background-color:#bfbfbf;
 			position:absolute;
 			top:20%;
 			left:15%;
-			z-index:20;
+			
+			padding:3px;
 		}
 
-		p {
+		article > p {
 			background-color: #fff;
 			color: black;
 			font-family: "Times New Roman";
-			height: 70%;
+			height: 85%;
 			margin:0;
 			padding:10px;
+			border-bottom: 2px solid #eee;
+    			border-right: 2px solid #fefefe;
+    			border-left: 2px solid #555;
+    			border-top: 2px solid #555;
+    			margin: 3px;
+    		overflow-y: scroll;;
 		}
 
-		a {
-
-		}
+		article > a {
+			margin:5px;
+			color:navy;		
+			display: block;}
+			
 
 		aside {
 			display:none;
 			width:15%
 			height:25%;
-			background-color:#aaa;
+			background-color:#bfbfbf;
 			position:absolute;
 			top:15%;
 			right:15%;
 			z-index:10;
+			padding:3px;
 		}
 
 		figure {
@@ -89,34 +137,72 @@ height:100%;
 		}
 
 	nav {
-		background-color: #aaa;
+		background-color: #bfbfbf;
 		position: fixed;
 		bottom:0;
-		height: 30px;
+		height: 50px;
 		width: 100%;
+		
 	}
 
 		nav .dropup > button {
-			position: relative;
-			left:0;
-			bottom:0;
-			width:80px;
-			height:30px;
-			background-color:#ccc;
-			border: 2px solid #777;
-		}
+    		position: relative;
+    		left: 0;
+    		bottom: 0;
+    		background-color: #ccc;
+    		border-radius: 3px;
+    		background: url(../content/start.png) left center no-repeat;
+    		background-size: 40px 35px;
+    		text-align: right;
+    		font-weight: bolder;
+    		font-size: 28px;
+    		/* line-height: 1.5em; */
+    		float: left;
+    		width: 120px;
+    		height: 50px;
+    		display: inline-block;
+    		box-sizing: border-box;
+    		padding: 4px 10px;
+    		margin-left: 2px;
+    		cursor: default;
 			
+		}
+			nav .dropup > button:active, nav .dropup > button:focus {
+				border-bottom: 2px solid #eee;
+    			border-right: 3px solid #fefefe;
+    			border-left: 3px solid #333;
+    			border-top: 3px solid #333;
+    		}
 			.startmenu {
 				min-height:350px;
-			   	min-width: 250px;
+				width:24%;
+			   	max-width: 450px;
+			   	background-color:#bfbfbf;
+			   	z-index:999;
 
 			}
+
+				.startmenu > li {
+					margin-left:48px;
+				}
+
 				.startmenu > li > a {
-					padding: 15px;
+					padding: 0 10px;
+				}
+
+				.startmenu > li > a > img {
+				    width: 55px;
+				    padding: 0 5px 10px 5px;
+				}
+
+				.startmenu > li > a > span {
+					font-size: 10px;
+				    padding: 20px 5px;
+    				float: right;
 				}
 
 				.startmenu a:hover {
-				background-color:navy !important;
+				background-color: #00007f !important;
 				color:white !important;
 				text-decoration: none;
 				}
@@ -126,6 +212,33 @@ height:100%;
 				    padding: 5px;
     				float: right;
 				}
+
+
+    		    .startmenu #left {
+    		        width: 48px;
+    		        position: absolute;
+    		        left: 0px;
+    		        top: 0px;
+    		        bottom: 0px;
+    		        background-color: rgb(128,128,128);
+    		        font-family: Arial;
+    		        font-weight:900;
+    		        text-transform: capitalize;
+    		    }
+	
+	        	
+	        	    #left > .b {
+						color: rgb(192,192,192);
+    					transform: rotateZ(-90deg);
+    					transform-origin: center left;
+    					display: inline-block;
+    					width: 200px;
+    					white-space: nowrap;
+    					font-size: 28px;
+    					margin-top: 9em;
+    					margin-left: 24px;
+    					font-weight: normal;
+        	    	}
 
 			.dropdown-submenu {
 			   position: relative;
@@ -152,11 +265,11 @@ height:100%;
  				font-size: 14px;
  				text-align: left;
  				list-style: none;
- 				background-color: #fff;
+ 				background-color:#bfbfbf;
  				background-clip: padding-box;
- 				border: 1px solid #ccc;
- 				border: 1px solid rgba(0,0,0,.15);
- 				border-radius: 4px;
+ 				/*border: 1px solid #bfbfbf;
+ 				border: 1px solid rgba(0,0,0,.15);*/
+ 				border-radius: 0;
 				}
 				
 				.nav_dropright_menu-level2 {
@@ -179,3 +292,43 @@ height:100%;
 					display: block;
 				}
 				
+				#systray {
+					/* margin-right: 2px; */
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					border-top: inset 2px grey;
+					border-left: inset 2px grey;
+					border-bottom: inset 2px white;
+					border-right: inset 2px white;
+					/* padding-top: 17px; */
+					display: inline-block;
+					/* float: right; */
+					width: 150px;
+					height: 40px;
+				}
+
+				.clock {
+    				float: right;
+    				padding-left: 5px;
+    				padding-right: 5px;
+    				font-size: 25px;
+				}
+
+				.lang {
+					float: left;
+    				padding-left: 5px;
+    				padding-right: 5px;
+    				font-size: 25px;
+				}
+
+				.lang a {
+					background-color: #00007f;
+					color: white;
+				}
+
+				.lang a:hover, .lang a:focus {
+					background-color: #0000ff;
+					color: white;
+					text-decoration: none;
+				}
