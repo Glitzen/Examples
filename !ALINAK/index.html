@@ -40,7 +40,7 @@
     src: url(Intro-Book-Caps.woff);
 }
 
-h1 {font-family:intro-bc;font-weight:bold;}
+h1 {font-family:intro-bc;font-weight:bold;text-align: center;}
 
 h2 {font-family:intro-ta;font-weight:bold;}
 
@@ -48,7 +48,7 @@ h2 {font-family:intro-ta;font-weight:bold;}
 	a {color:black; text-decoration:none;}
 	a:hover { color:#0f2199; text-decoration:none;}
 
-h5 {font-family:intro-la; text-decoration:underline;text-transform:uppercase;}
+h5 {font-family:intro-la; /*text-decoration:underline;*/text-transform:uppercase;}
 
 /*
 body {background: url("example1.jpg") no-repeat left top; 
@@ -199,8 +199,8 @@ document.getElementById("defaultOpen").click();
 			<a class="nav-link dropbtn" href="#txt">ТЕКСТЫ</a>
 			<div class="dropdown-content">
 				<a href="#txt_recens">Рецензии</a>
-				<a href="#txt_events">События</a>
 				<a href="#txt_other">Аналитические, рекламные и другие</a>
+				<a href="#txt_events">События</a>
 			 </div>
 		  </li>
 		  <li class="nav-item">
@@ -288,25 +288,36 @@ document.getElementById("defaultOpen").click();
 		<img src="сойка2.jpg" class="img-fluid float-left" alt="Responsive image">
 	</div>
 </div>
-		
+
+<div id="txt_other" class="top_wrapper row justify-content-center" style="text-align:center;">
+	<div class="col-12"> <h5>Июньский дайджест премьер журнала Cineticle</h5> </div>
+</div>
+	
 <div class="contentblock row justify-content-start">
 	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-2">
 		
-			<a href="http://cineticle.com/reviews-/1336-digest-2016-june.html"><h3>Июньский дайджест премьер журнала Cineticle</h3></a>
-			<p>Про «Асфальт»:<br><br>
-Юный сосед Юппер сочиняет себе имя и шутя говорит о погибших родителях, неудачник в коляске фантазирует, что он фотограф из National Geographic, объездивший две трети мира и, чтобы придать своей истории правдоподобности, делает снимки с экрана телевизора на старый полароид.<br>
+			<a href="http://cineticle.com/reviews-/1336-digest-2016-june.html"><h3>«Асфальт»</h3></a>
+			<p>
+				Юный сосед Юппер сочиняет себе имя и шутя говорит о погибших родителях, неудачник в коляске фантазирует, что он фотограф из National Geographic, объездивший две трети мира и, чтобы придать своей истории правдоподобности, делает снимки с экрана телевизора на старый полароид.<br>
 <…> <br>
 В проникновенной сцене последнего ужина американец рассказывает арабке близкую ему теорию древних греков, видящих в каждой звезде глаз бога. До того не понимавшая ни слова, она внимает ему и отвечает песней, показывая — эта мысль ей близка, ей тоже нужно, чтобы её ожидание не было напрасным. В американце она видит и утерянного сына, и некий привет свыше, посланника по типу беккетовского мальчика, прибежавшего сказать, — вы ждите, ждите, он пока занят, но обязательно придёт.
- <br>
-Про «Голодные сердца»:<br>
-<br>
-Мина становится веганшей, и фильм из мелодрамы превращается в психотриллер, где важен не только и не столько сюжет, сколько планы и интерьеры.<br>
+	</p>
+	<div class="col-12 col-sm-6 order-1">
+		<img src="асфальт.jpg" class="imageblock_left img-fluid float-right" alt="Responsive image">
+	</div>
+</div>
+<div class="contentblock row justify-content-end">
+	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-1">
+		
+			<a href="http://cineticle.com/reviews-/1336-digest-2016-june.html"><h3>«Голодные сердца»</h3></a>
+			<p>
+				Мина становится веганшей, и фильм из мелодрамы превращается в психотриллер, где важен не только и не столько сюжет, сколько планы и интерьеры.<br>
 Картина своей жанровой структурой, операторской работой и поведением главной героини отчетливо отсылает к классическим образцам, таким как «Отвращение» Романа Полански. С героиней Катрин Денёв героиню Альбы Рорвахер роднит и некий предметно-физиологический характер психоза. Там реакцию мог запустить стаканчик для чистки зубов, которым воспользовался чужак, здесь героиня столь же сильно помешана на чистоте, не подпускает к ребёнку незнакомцев, но главное, что её пугает, – это мясо.
 			</p>
 		
 	</div>
-	<div class="col-12 col-sm-6 order-1">
-		<img src="асфальт.jpg" class="imageblock_left img-fluid float-right" alt="Responsive image">
+	<div class="col-12 col-sm-6 order-2">
+		<img src="голодные сердца2.jpg" class="imageblock_left img-fluid float-left" alt="Responsive image">
 	</div>
 </div>
 
