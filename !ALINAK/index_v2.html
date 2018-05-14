@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<!-- saved from url=(0039)file:///D:/%23webDev/!ALINAK/index.html -->
-<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="ru">
+  <head>
     <!-- Required meta tags -->
-    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./index_v2_files/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <title>Alina Kuzio</title>
   </head>
   <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./index_v2_files/jquery-3.3.1.slim.min.js.Без названия" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="./index_v2_files/popper.min.js.Без названия" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="./index_v2_files/bootstrap.min.js.Без названия" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <style>
 /*Основной текст: Intro Light Regular 30px Sharp
 Заголовок текста: Intro Thin Alt Regular 48 pt Strong 
@@ -40,13 +40,15 @@
     src: url(Intro-Book-Caps.woff);
 }
 
-h1 {font-family:intro-bc;font-weight:bold;}
+h1 {font-family:intro-bc;font-weight:bold;text-align: center;}
 
 h2 {font-family:intro-ta;font-weight:bold;}
 
-h3 {font-family:intro-ta;font-weight:bold; color:#0f2199;}
+	h3 {font-family:intro-ta;font-weight:bold;text-transform:uppercase;}
+	a {color:black; text-decoration:none;}
+	a:hover { color:#0f2199; text-decoration:none;}
 
-h5 {font-family:intro-la; text-decoration:underline;}
+h5 {font-family:intro-la; /*text-decoration:underline;*/text-transform:uppercase;}
 
 /*
 body {background: url("example1.jpg") no-repeat left top; 
@@ -54,164 +56,500 @@ body {background: url("example1.jpg") no-repeat left top;
 
 	body {font-family:intro-lr;
 	font-weight:bold;
-	text-transform:uppercase;}
+	}
 
-.nav {background-color: #f2f2f2; text-decoration:none; margin-top:15px;}
+.nav {background-color: #f2f2f2; text-decoration:none;}
 
-.nav a {color:black; font-weight:bold; padding-top:2px;  padding-bottom:2px;} 
-.nav .a:hover{}
+.nav a {color:black; font-weight:bold; padding-top:2px;  padding-bottom:2px; text-transform:uppercase;} 
+.nav a:hover{background-color: #ddd}
 
 .top_wrapper {padding-top:25px; padding-bottom:25px;}
 
+.videoblock {background-color: #000; padding-top:0;}
 
-.contentblock {padding-top:15px;padding-bottom:15px;}
+.row {padding-left: 0; padding-right: 0; margin-right: 0; margin-left: 0;}
+
+.order-1 {    padding-left: 0; padding-right: 15px;}
+.order-2 {    padding-right: 0; padding-left: 15px;}
+
+
+.contentblock {padding-top:15px;padding-bottom:15px;     align-items: center!important;}
+	.contentblock-comm {padding-top:15px;padding-bottom:15px;     align-items: start!important;}
 
 .contentblock p {padding-top:10px;}
 
+.header_block {background-color:#E7E7E7;}
+
 .header_title {text-align: center;}
 
-.header_title_h {padding-top:25px;}
+.header_title_h {padding-top:25px;font-family:intro-la;padding-bottom:15px;}
 
+.hoverpics:hover {box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;}
 
+/* ### DROPMENU ### */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+/* ### VIDEOTABS ### */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #141414;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+	color:#fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	width: 33.33%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #323232;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #545454;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	padding: 0;
+    /* padding: 12px 12px; */
+   /* border: 1px solid #ccc; */
+    border-top: none;
 
 </style>
+<script>
+function openVideo(evt, listName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(listName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
-<div class="container-fluid">
-	<div class="row justify-content-center">
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+	<div class="row justify-content-center header_block">
 		<div class="header_title col-12">
 			<h1 class="header_title_h">АЛИНА КУЗЬО</h1>
 		</div>
 	</div>
 		
-</div>
+
 	<ul class="nav sticky-top justify-content-center">
 		  <li class="nav-item">
-			<a class="nav-link active" href="file:///D:/%23webDev/!ALINAK/index.html#">ВИДЕО</a>
+			<a class="nav-link active" href="#videos">ВИДЕО</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropbtn" href="#txt">ТЕКСТЫ</a>
+			<div class="dropdown-content">
+				<a href="#txt_recens">Рецензии</a>
+				<a href="#txt_other">Аналитические, рекламные и другие</a>
+				<a href="#txt_events">События</a>
+			 </div>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="file:///D:/%23webDev/!ALINAK/index.html#">ТЕКСТЫ</a>
+			<a class="nav-link" href="#lections">ЛЕКЦИИ</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link disabled" href="file:///D:/%23webDev/!ALINAK/index.html#">ЛЕКЦИИ</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="file:///D:/%23webDev/!ALINAK/index.html#">КОНТАКТЫ</a>
+			<a class="nav-link" href="#contacts">КОНТАКТЫ</a>
 		  </li>
 	</ul>
 
+	<div id="videos" class="row justify-content-center" style="padding-top:25px;">
+		<div class="col-12 col-sm-8 col-lg-6"> <h1>ВИДЕО</h1> </div>
+</div>
+	<div class="videoblock row justify-content-center">
+		<div class="col-10 col-sm-8 col-lg-6" style="text-align:center; margin-bottom:20px;">
+			<div class="tab nav-justified">
+			  <button class="tablinks" onclick="openVideo(event, 'promos')" id="defaultOpen">Промо-ролики</button>
+			  <button class="tablinks" onclick="openVideo(event, 'teasers')">Тизеры</button>
+			  <button class="tablinks" onclick="openVideo(event, 'trailers')">Трейлеры и анонсы</button>
+			</div>
+			<div id="promos" class="tabcontent">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="100%" src="https://www.youtube.com/embed/wqQcObEjSlA?list=PLEdN2QsNzTx8HApJqvlzSy4BULaopsm-Q&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
 
-<div class="row justify-content-center" style="padding-top:25px;">
+			<div id="teasers" class="tabcontent">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLEdN2QsNzTx_5wPEtSOmyLUtnNZ_ooasG&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div id="trailers" class="tabcontent">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="100%" src="https://www.youtube.com/embed/wK_0ZPVx3yQ?list=PLEdN2QsNzTx93vtdxjyROZMXccZYmhfBH&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+</div>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<div id="txt" class="row justify-content-center" style="padding-top:25px;">
 		<div class="col-12 col-sm-8 col-lg-6"> <h1>ТЕКСТЫ</h1> </div>
 </div>
-<div class="row justify-content-center" style="text-align:center;padding-bottom:25px;">
+<div id="txt_recens" class="row justify-content-center" style="text-align:center;padding-bottom:25px;">
 		<div class="col-12"> <h5>Рецензии</h5> </div>
 </div>
 
 
-<div class="contentblock row justify-content-end">
+<div class="contentblock row justify-content-end align-items-center">
 	<div class="col-12 col-sm-4 col-lg-3 order-1">
 		
-			<h3>«Холодный фронт»<br>(«Труба, край и вилы»)</h3>
+			<a href="http://tricolortvmag.ru/article/canals/truba-kray-i-vily/?sphrase_id=41046"><h3>«Холодный фронт»<br>(«Труба, край и вилы»)</h3></a>
 			<p>Психологический триллер, снятый на поразительной красоты просторах с по-настоящему красивыми людьми в главных ролях, — фильм-обманка. Притворяясь, что вот-вот что-то произойдёт, он то и дело обрубает постоянно возникающее напряжение то шуткой, то пробежкой. </p>
 		
 	</div>
-	<div class="col-12 col-sm-6 order-2" style="
-    background-color: darkgreen;
-">
-		<img src="./index_v2_files/холодный фронт.jpeg" class="img-fluid float-left" alt="Responsive image">
+	<div class="col-12 col-sm-6 order-2">
+		<img src="холодный фронт.jpeg" class="img-fluid float-left" alt="Responsive image">
 	</div>
 </div>
 		
 <div class="contentblock row justify-content-start">
 	<div class="col-12 col-sm-4 col-lg-3 order-2">
 		
-			<h3>«Не в моем вкусе»<br>(«Роман в провинции»)</h3>
+		<a href="http://tricolortvmag.ru/article/movies/roman-v-provintsii/?sphrase_id=41044"><h3>«Не в моем вкусе»<br>(«Роман в провинции»)</h3></a>
 			<p>Фильм «Не в моем вкусе» начинается как ремейк недавнего «Иррационального человека» Вуди Аллена: скучающий сноб-философ приезжает в захолустную провинцию и находит двух женщин, которые не прочь послушать о его жизненных воззрениях за пределами лектория. Но как быстро «Иррациональный человек» делает крен в сторону трагикомедии об экзистенциальном существовании, так еще резвей «Не в моем вкусе» сворачивает в мелодраму.
 			</p>
 		
 	</div>
-	<div class="col-12 col-sm-6 order-1" style="
-    background-color: #e2c397;
-">
-		<img src="./index_v2_files/не в моем вкусе.jpg" class="img-fluid float-right" alt="Responsive image">
+	<div class="col-12 col-sm-6 order-1">
+		<img src="не в моем вкусе.jpg" class="img-fluid float-right" alt="Responsive image">
 	</div>
 </div>
 
 <div class="contentblock row justify-content-end">
 	<div class="col-12 col-sm-4 col-lg-3 order-1">
 		
-			<h3>«Голодные игры: Сойка-пересмешница. Часть II»<br>(«Финальный полёт Сойки-пересмешницы»)</h3>
+			<a href="http://kinopokaz.tv/newsItem/show/315"><h3>«Голодные игры: Сойка-пересмешница. Часть II»<br>(«Финальный полёт Сойки-пересмешницы»)</h3></a>
 			<p>То, что в этой «Сойке» раз за разом погибают прекрасные герои (в какой-то момент даже кажется, что не выживет вообще никто), и то, что в момент финальной битвы Китнисс облачена в мантию, неуемно отсылает к другой популярной подростковой франшизе. Но если поттериана только в литературном виде взрослела со своим читателем, а экранизациям этот личностный рост передать не удалось, то фильмовое воплощение романов Коллинз взрослеет вместе со своим зрителем. В финальной части даже кажется, что повзрослело уже совсем. </p>
 		
 	</div>
-	<div class="col-12 col-sm-6 order-2" style="
-    background-color: brown;
-">
-		<img src="./index_v2_files/сойка2.jpg" class="img-fluid float-left" alt="Responsive image">
+	<div class="col-12 col-sm-6 order-2">
+		<img src="сойка2.jpg" class="img-fluid float-left" alt="Responsive image">
 	</div>
 </div>
-		
+
+<div id="txt_other" class="top_wrapper row justify-content-center" style="text-align:center;">
+	<div class="col-12"> <h5>Июньский дайджест премьер журнала Cineticle</h5> </div>
+</div>
+	
 <div class="contentblock row justify-content-start">
 	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-2">
-		
-			<h3>Июньский дайджест премьер журнала Cineticle</h3>
-			<p>Про «Асфальт»:<br><br>
+		<a href="http://cineticle.com/reviews-/1336-digest-2016-june.html">
+			<h3>«Асфальт»</h3>
+		</a>
+		<p>
 Юный сосед Юппер сочиняет себе имя и шутя говорит о погибших родителях, неудачник в коляске фантазирует, что он фотограф из National Geographic, объездивший две трети мира и, чтобы придать своей истории правдоподобности, делает снимки с экрана телевизора на старый полароид.<br>
-&lt;…&gt; <br>
+<…> <br>
 В проникновенной сцене последнего ужина американец рассказывает арабке близкую ему теорию древних греков, видящих в каждой звезде глаз бога. До того не понимавшая ни слова, она внимает ему и отвечает песней, показывая — эта мысль ей близка, ей тоже нужно, чтобы её ожидание не было напрасным. В американце она видит и утерянного сына, и некий привет свыше, посланника по типу беккетовского мальчика, прибежавшего сказать, — вы ждите, ждите, он пока занят, но обязательно придёт.
- <br>
-Про «Голодные сердца»:<br>
-<br>
+		</p>
+	</div>			
+	<div class="col-12 col-sm-6 order-1">
+		<img src="асфальт.jpg" class="imageblock_left img-fluid float-right" alt="Responsive image">
+	</div>
+</div>
+<div class="contentblock row justify-content-end">
+	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-1">
+		<a href="http://cineticle.com/reviews-/1336-digest-2016-june.html">
+			<h3>«Голодные сердца»</h3>
+		</a>
+		<p>
 Мина становится веганшей, и фильм из мелодрамы превращается в психотриллер, где важен не только и не столько сюжет, сколько планы и интерьеры.<br>
 Картина своей жанровой структурой, операторской работой и поведением главной героини отчетливо отсылает к классическим образцам, таким как «Отвращение» Романа Полански. С героиней Катрин Денёв героиню Альбы Рорвахер роднит и некий предметно-физиологический характер психоза. Там реакцию мог запустить стаканчик для чистки зубов, которым воспользовался чужак, здесь героиня столь же сильно помешана на чистоте, не подпускает к ребёнку незнакомцев, но главное, что её пугает, – это мясо.
-			</p>
-		
+		</p>
 	</div>
-	<div class="col-12 col-sm-6 order-1" style="
-    background-color: #235e9e;
-">
-		<img src="./index_v2_files/асфальт.jpg" class="imageblock_left img-fluid float-right" alt="Responsive image">
+	<div class="col-12 col-sm-6 order-2">
+		<img src="голодные сердца2.jpg" class="imageblock_left img-fluid float-left" alt="Responsive image">
+	</div>
+</div>
+<div class="contentblock row justify-content-start">
+	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-2">
+		<a href="http://kinopokazhd2.tv/newsItem/show/223">
+			<h3>«Телохранитель» («История любви по-лондонски»)</h3>
+		</a>
+		<p>
+«Телохранитель» прямо-таки перенасыщен музыкой: там играет и “Subterranean Homesick Blues” Боба Дилана, и “Stray Cat Blues” The Rolling Stones, и другие композиции 60-х, но больше всего там группы Kasabian (гитарист группы Серджио Пиццорно даже заявлен композитором фильма). Очаровательная “La Fée Verte” звучит в картине так часто, что фильм рискует превратиться в клип, для которого песню зациклили на репите. И вообще guilty pleasure для "Телохранителя" – лучшее определение. Вероятно, так смотрит на свой дебют и сам режиссер, который до этого момента занимался серьезными сценариями для серьёзных людей, но вдруг послал всё к чёрту и под красивую постмодернистскую песню снял историю о том, как двум (даже трем, считая дворецкого) хорошим людям мешает идти по дороге из жёлтого кирпича непродуманное и полное ошибок прошлое.
+		</p>
+	</div>
+	<div class="col-12 col-sm-6 order-1">
+		<img src="телохранитель2.jpg" class="imageblock_left img-fluid float-left" alt="Responsive image">
+	</div>
+</div>
+<div class="contentblock row justify-content-end">
+	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-1">
+		<a href="http://tricolortvmag.ru/article/movies/park-kultury-i-otdykha-ochen-grustnyy-romkom/?sphrase_id=52292">
+			<h3>«Парк культуры и отдыха»: очень грустный ромком</h3>
+		</a>
+		<p>
+Пусть на экране они влюбляются, глупо шутят, врезаются на своих дешевых машинах в деревья после загульных вечеринок, пусть они думают, ехать ли в Нью-Йорк за счастьем или остаться в набившей оскомину провинции, – всё это уже случилось 30 лет назад. Сейчас этим тинейджерам где-то по 47, и цитадель парка культуры для них осталась только в воспоминаниях как место, в котором у них еще была масса вариантов для маневра.
+		</p>
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<img src="парк культуры и отдыха.jpg" class="imageblock_left img-fluid float-left" alt="Responsive image">
+	</div>
+</div>
+<div class="contentblock row justify-content-start">
+	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-2">
+		<a href="http://www.cineticle.com/texts/1321-araki-jarry.html">
+			<h3>«Я плохо говорю по-польски, вы меня не поймете»(Грегг Араки и Альфред Жарри)</h3>
+		</a>
+		<p>
+		Читая роман, приходится пробираться через реально ощутимые дебри. Но в дебрях этих кроется совершенно чёткое определение патафизики, — насколько только может быть четким определение воображаемой науки. Впрочем, наука появилась позже, и позже даровала название группе драматургов, которые отдавали Жарри честь и благодарность. Сначала же была пьеса «Король Убю», провалившаяся и изменившая будущее театра (не только его). Пьеса стала взрывом-началом и открывалась с сообщения о том, что «действие происходит в Польше, а именно нигде».
+		</p>
+	</div>
+	<div class="col-12 col-sm-6 order-1">
+		<img src="араки-жарри.jpg" class="imageblock_left img-fluid float-left" alt="Responsive image">
 	</div>
 </div>
 
+ 
 
-<div class="top_wrapper row justify-content-center" style="text-align:center;">
+<div id="txt_other" class="top_wrapper row justify-content-center" style="text-align:center;">
 	<div class="col-12"> <h5>Аналитические, рекламные и другие</h5> </div>
 </div>
 
 
-<div class="contentblock row justify-content-end">
-	<div class="textblock_left col-12 col-sm-4 col-lg-3 order-1">
-		
+<div class="contentblock-comm row justify-content-center">
+	<div class="textblock_left col-12 col-sm-4 order-1">
+		<a href="https://www.iqconsultancy.ru/articles/kontrakt-risovalshchika-kuda-poyti-khudozhniku-varianty-programm-i-spetsialnostey/">
 			<h3>Контракт рисовальщика: куда пойти художнику — варианты программ и специальностей</h3>
-			<p>Вариант четвертый: придумывать модную одежду
- <br>
-У вас безупречный вкус и вы точно знаете, какой пиджак будет идеально отражать внутренний мир того парня? Вам не дают покоя лавры Ива Сен-Лорана, Готье и Шанель?
- <br>
-Вероятно, вы мечтаете о мире моды. Но чтобы создавать модную одежду, которая найдет отклик у людей, недостаточно уметь рисовать и обладать хорошим вкусом. Стоит подумать о профильном образовании, где вы не только отшлифуете навыки рисунка, но и научитесь работать с материалами, делать выкройки, организовывать презентации коллекций и анализировать рынок. Кроме того, учеба в вузе — это возможность наладить связи с индустрией и получить доступ к профессиональным контактам, чтобы быстрее заявить о себе в мире моды.</p>
-		
+		</a>
 	</div>
-	<div class="col-12 col-sm-6 order-2">
-		<img src="./index_v2_files/Снимок экрана 2018-04-04 в 15.24.13.png" class="imageblock_right img-fluid float-left" alt="Responsive image">
+	<div class="textblock_right col-12 col-sm-4 order-2">
+		<a href="https://www.iqconsultancy.ru/articles/gruppa-russell">
+			<h3>Группа Russell: что отличает элитные вузы Британии</h3>
+		</a>
 	</div>
 </div>
+<div class="contentblock-comm row justify-content-center">
+	<div class="textblock_left col-12 col-sm-4 order-1">
+		<a href="https://www.iqconsultancy.ru/articles/zhurnalist/">
+			<h3>Работа журналистом: как устроиться в The Guardian, NY Times или BBC</h3>
+		</a>
+	</div>
+	<div class="textblock_right col-12 col-sm-4 order-2">
+		<a href="http://kinopokaz.tv/newsItem/show/329">
+			<h3>Освещение одного из этапов скандала #oscarsowhite («#oscarsowhite: Ответный взгляд на бойкот»)</h3>
+		</a>
+	</div>
+</div>
+
+
 		
-<div class="contentblock row justify-content-start">
-	<div class="textblock_right col-12 col-sm-4 col-lg-3 order-2">
-		
-			<h3>Группа Russell: что отличает элитные вузы Британии</h3>
-			<p>Не только британские, но и крупные международные компании признают ценность выпускников вузов Russell. Они заранее нацеливают на них своих хедхантеров и предлагают выпускникам отличные условия. Как заявляет генеральный директор группы Russell Венди Пиатт, зарплата выходцев из их университетов на 10% процентов выше, чем у других. Вузы группы Russell активно участвуют в карьерной судьбе своих студентов, не жалея на это средств: проводят индивидуальные консультации, стажировки, карьерные дни и ярмарки.
-			</p>
-		
+<!--<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="Снимок экрана 2018-04-04 в 15.24.13.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
 	</div>
 	<div class="col-12 col-sm-6 order-1">
-		<img src="./index_v2_files/Снимок экрана 2018-04-04 в 15.21.36.png" class="imageblock_left img-fluid float-right" alt="Responsive image">
+		<a href="">
+			<img src="Снимок экрана 2018-04-04 в 15.21.36.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>
+	</div>
+</div>-->
+
+<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="01.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="02.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
 	</div>
 </div>
+<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="03.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="04.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
+	</div>
+</div>
+<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="05.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="06.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
+	</div>
+</div>
+<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="07.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="08.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
+	</div>
+</div>
+<div class="contentblock-comm row justify-content-center">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="10.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+	<div class="col-12 col-sm-6 order-2">
+		<a href="">
+			<img src="11.png" class="hoverpics imageblock_right img-fluid float-left" alt="Responsive image">
+		</a>
+	</div>
+</div>
+<div class="contentblock-comm row justify-content-start">
+	<div class="col-12 col-sm-6 order-1">
+		<a href="">
+			<img src="09.png" class="hoverpics imageblock_left img-fluid float-right" alt="Responsive image">
+		</a>		
+	</div>
+
+</div>
+
+
+
+<div id="txt_events" class="top_wrapper row justify-content-center" style="text-align:center;">
+	<div class="col-12"> <h5>События</h5> </div>
+</div>
+<div class="contentblock row justify-content-center">
+	<div class="textblock_right col-12 col-sm-8 col-lg-6">
+		<a href="https://news.microsoft.com/ru-ru/features/pobediteli-imagine-cup-2017/">
+			<h3>Сценарий церемонии награждения российского финала конкурса Imagine Cup 2017. </h3>
+		</a>
+	</div>
+</div>
+<div class="contentblock row justify-content-center">
+	<div class="col-12 col-sm-8">
+		<a href="https://news.microsoft.com/ru-ru/features/pobediteli-imagine-cup-2017/">
+			<img src="imaginecup.png" class="hoverpics imageblock_left img-fluid" alt="Responsive image">
+		</a>
+	</div>
+</div>
+	  
+<br>
+<br>
+<div id="lections" class="row justify-content-center" style="padding-top:25px;">
+		<div class="col-12 col-sm-8 col-lg-6"> <h1>ЛЕКЦИИ</h1> </div>
+</div>
+<div class="contentblock row justify-content-center">
+	<div class="textblock_right col-12 col-sm-8 col-lg-6">
+		<a href="https://theoryandpractice.ru/seminars/96746-smotret-interpretirovat-indie-movies--pokaz-filma-rebekki-miller-plan-meggi-26-2">
+			<h3>Я составила и прочла авторский курс лекций о кино.</h3>
+		</a>
+	</div>
+</div>
+<div class="contentblock row justify-content-center">
+	<div class="col-12 col-sm-8">
+		<a href="https://theoryandpractice.ru/seminars/96746-smotret-interpretirovat-indie-movies--pokaz-filma-rebekki-miller-plan-meggi-26-2">
+			<img src="tnp.png" class="hoverpics imageblock_left img-fluid" alt="Responsive image">
+		</a>
+		<p>Ссылка на страницу мероприятия «Вконтакте» <a href="https://vk.com/filmstalking">[VK]</a>.</p>
+	</div>
+</div>
+	  
+	  
+<br>
+<br>
+<div id="contacts" class="row justify-content-center" style="padding-top:25px;">
+		<div class="col-12 col-sm-8 col-lg-6"> <h1>КОНТАКТЫ</h1> </div>
+</div>
+<br>
+	  <div class="contentblock row justify-content-center">
+	<div class="textblock_right col-12 col-sm-8 col-lg-6">
 		
+			<h3>Алина Кузьо</h3>
+		<br>
+			<h5>Редактор, режиссер промо</h5>
+		<br>
+		<ul>
+			<li>+7 (911) 847-21-63</li>
+			<li><a href="alinakuzio@yandex.ru3">alinakuzio@yandex.ru3</a></li>
+			<li><a href="https://vk.com/alina_kuzio">ВКонтакте</a></li>
+			<li><a href="https://www.facebook.com/kuzioalina">facebook</a></li>
+			<li><a href="https://medium.com/@meh_wow_films/latest">Medium</a></li>
+		</ul>
+		
+	</div>
+</div>
+	  
+	  <br>
+	  <br>
+	  <br>
+	  <br>
 
 
-
-  
-
-</body></html>
+  </body>
+</html>
